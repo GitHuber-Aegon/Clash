@@ -1,0 +1,6 @@
+#Direct.list
+IP-CIDR,198.18.0.1/32,no-resolve
+IP-CIDR,65.8.164.0/24,no-resolve
+IP-CIDR,112.67.249.0/24,no-resolve
+PROCESS-NAME,DownloadSDKServer.exe
+PROCESS-NAME,NVIDIA Web Helper.exe

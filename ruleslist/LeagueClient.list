@@ -1,0 +1,17 @@
+IP-CIDR,103.240.224.0/24,no-resolve
+IP-CIDR,103.240.225.0/24,no-resolve
+DOMAIN-SUFFIX,riotgames.com
+DOMAIN-SUFFIX,leagueoflegends.com
+DOMAIN-KEYWORD,riot
+DOMAIN-KEYWORD,Riot
+DOMAIN-KEYWORD,leagueoflegends
+DOMAIN-KEYWORD,League of Legends
+PROCESS-NAME,wegame.exe
+PROCESS-NAME,browser.exe
+PROCESS-NAME,CrossProxy.exe
+PROCESS-NAME,LeagueClient.exe
+PROCESS-NAME,LeagueClientUxRender.exe
+PROCESS-NAME,League of Legends.exe
+PROCESS-NAME,Leagur of Legends(TM)Client.exe
+PROCESS-NAME,RiotClientServices.exe
+PROCESS-NAME,RiotClientUx.exe

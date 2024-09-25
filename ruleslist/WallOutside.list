@@ -1,0 +1,23 @@
+;🔞
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,jable.tv
+DOMAIN-SUFFIX,missav.com
+
+;Perplexity.ai
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN,perplexity
+DOMAIN-KEYWORD,perplexity
+
+;pyTranscriber
+PROCESS-NAME,pyTranscriber.exe
+
+;Adobe
+DOMAIN-SUFFIX,Adobe.com
+PROCESS-NAME,Photoshop.exe
+PROCESS-NAME,Adobe Premiere Pro.exe
+DOMAIN-KEYWORD,Adobe
+DOMAIN-KEYWORD,Photoshop
+DOMAIN-KEYWORD,Premiere Pro
+
+"Code
+PROCESS-NAME,Code.exe

@@ -1,0 +1,7 @@
+#DownloadTools
+PROCESS-NAME,fdm.exe
+PROCESS-NAME,javaw.exe
+PROCESS-NAME,Motrix.exe
+PROCESS-NAME,XDown.exe
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,DownloadSDKServer.exe
