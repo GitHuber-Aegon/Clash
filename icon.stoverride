@@ -32,6 +32,15 @@ proxy-groups:
       - 🚫 拒绝请求
       - ⭕ 直连请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png
+  - name: WeChat
+    type: select
+    proxies:
+      - 🇨🇳 中国大陆
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
   - name: 爱奇艺
     type: select
     proxies:
