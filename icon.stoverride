@@ -161,32 +161,18 @@ proxy-groups:
       - ⭕ 直连请求
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
-  - name: Bing
+  - name: AI
     type: select
     proxies:
+      - 🇺🇸 美国
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇸🇬 狮城
       - 🇯🇵 日本
       - 🇰🇷 韩国
-      - 🇺🇸 美国
       - 🇪🇺 欧洲
       - 🎯 默认选择
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/bing.png
-  - name: OpenAI
-    type: select
-    proxies:
-      - 🇹🇼 台湾
-      - 🇸🇬 狮城
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🎯 默认选择
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/openai.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
