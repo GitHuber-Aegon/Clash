@@ -364,7 +364,7 @@ proxy-groups:
     include-all: true
     filter: "🇯🇵|新加坡|狮城|獅城|SG|Singapore"
 
-  - name: 🇰🇷 南韩
+  - name: 🇰🇷 韩国
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 300
