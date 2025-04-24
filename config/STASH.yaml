@@ -339,7 +339,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "🇭🇰|香港|HK|HongKong"
-    icon: 
 
   - name: 🇹🇼 台湾
     type: url-test
@@ -347,7 +346,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
-    icon: 
 
   - name: 🌏 亚洲
     type: url-test
@@ -355,7 +353,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "亚洲|亞洲|日本|新加坡|韩|越|柬|马来西亚|泰|印度|菲|印尼|亚美尼亚|格鲁吉亚|土耳其|沙特|伊拉克|以色列|阿曼|阿拉伯联合|卡塔尔|斯坦|杜拜|迪拜"
-    icon: 
 
   - name: 🇯🇵 日本
     type: url-test
@@ -363,7 +360,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "🇯🇵|日本|JP|Japan"
-    icon: 
 
   - name: 🇸🇬 狮城
     type: url-test
@@ -371,7 +367,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "🇯🇵|新加坡|狮城|獅城|SG|Singapore"
-    icon: 
 
   - name: 🇰🇷 南韩
     type: url-test
@@ -379,7 +374,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "🇰🇷|韩|韓|KR|Korea"
-    icon: 
 
   - name: 🇦🇺 澳洲
     type: url-test
@@ -387,7 +381,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "🇦🇺|澳大利亚|澳大利亞|新西兰|新西蘭|纽西兰|紐西蘭|AU|AUS|Australia"
-    icon: 
 
   - name: 🌎 美洲
     type: url-test
@@ -395,7 +388,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "美国|加拿大|阿根廷|秘鲁|哥伦比亚|危地马拉|厄瓜多尔|哥斯达黎加|墨西哥|智利|玻利维亚|乌拉圭|巴西"
-    icon: 
 
   - name: 🇺🇸 美国
     type: url-test
@@ -403,15 +395,13 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "美国|美利坚|US|USA"
-    icon: 
 
   - name: 🇪🇺 欧洲
     type: url-test
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     include-all: true
-    filter: "欧洲|歐洲|德国|法国|瑞士|英国|爱尔兰|冰岛|波兰|意大利|西班牙|荷兰|芬兰|奥地利|立陶宛|瑞典|希腊|拉脱维亚|挪威|丹麦|比利时|卢森堡|马其顿|阿尔巴尼亚|葡萄牙|乌克兰|摩尔多瓦|爱沙尼亚|克罗地亚|斯洛文尼亚|俄罗斯|保加利亚|塞尔维亚|塞浦路斯"
-    icon: 
+    filter: "德国|法国|瑞士|英国|爱尔兰|冰岛|波兰|意大利|西班牙|荷兰|芬兰|奥地利|立陶宛|瑞典|希腊|拉脱维亚|挪威|丹麦|比利时|卢森堡|马其顿|阿尔巴尼亚|葡萄牙|乌克兰|摩尔多瓦|爱沙尼亚|克罗地亚|斯洛文尼亚|俄罗斯|保加利亚|塞尔维亚|塞浦路斯"
 
   - name: 🌍 非洲
     type: url-test
@@ -419,7 +409,6 @@ proxy-groups:
     interval: 300
     include-all: true
     filter: "埃及|尼日利亚|摩洛哥|南非"
-    icon: 
 
 rule-providers:  # 远程规则集
         
