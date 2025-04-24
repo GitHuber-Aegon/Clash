@@ -476,7 +476,7 @@ rules:
   - RULE-SET,Global,Spotify
   - RULE-SET,Tinder
   - RULE-SET,YouTube,YouTube
-  - RULE-SET,Global,x
+  - RULE-SET,Global,X
   - RULE-SET,Global,Telegram
   - RULE-SET,Global,AI
   - GEOIP,Lan,DIRECT,no-resolve
