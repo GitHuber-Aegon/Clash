@@ -480,5 +480,5 @@ rules:
   - RULE-SET,Global,Telegram
   - RULE-SET,Global,AI
   - GEOIP,Lan,DIRECT,no-resolve
-  - GEOIP,CN,国内网站,no-resolve
+  - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
