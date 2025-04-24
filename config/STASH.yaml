@@ -89,7 +89,7 @@ proxy-groups:
 
   - name: WeChat
     type: select
-    proxies:
+    proxies: &O
       - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -275,7 +275,6 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     include-all: true
-    icon: 
 
   - name: 🎯 默认选择
     type: select
@@ -295,7 +294,6 @@ proxy-groups:
       - 🌍 非洲
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    icon: 
 
   - name: ☑️ 手动切换
     type: select
@@ -303,7 +301,6 @@ proxy-groups:
       - ⭕ 直连请求
       - 🚫 拒绝请求
     include-all: true
-    icon: 
 
   - name: 🐟 漏网之鱼
     type: select
@@ -313,7 +310,6 @@ proxy-groups:
       - 🎯 默认选择
       - ☑️ 手动切换
     include-all: true
-    icon: 
 
   - name: ⭕ 直连请求
     type: select
@@ -352,7 +348,7 @@ proxy-groups:
     url: "http://www.gstatic.com/generate_204"
     interval: 300
     include-all: true
-    filter: "亚洲|亞洲|日本|新加坡|韩|越|柬|马来西亚|泰|印度|菲|印尼|亚美尼亚|格鲁吉亚|土耳其|沙特|伊拉克|以色列|阿曼|阿拉伯联合|卡塔尔|斯坦|杜拜|迪拜"
+    filter: "日本|新加坡|韩|越|柬|马来西亚|泰|印度|菲|印尼|亚美尼亚|格鲁吉亚|土耳其|沙特|伊拉克|以色列|阿曼|阿拉伯联合|卡塔尔|斯坦|杜拜|迪拜"
 
   - name: 🇯🇵 日本
     type: url-test
