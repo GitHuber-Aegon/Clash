@@ -57,7 +57,7 @@ proxies:
 proxy-groups:
   - name: 墙外世界
     type: select
-    proxies: &G
+    proxies:
       - 🎯 默认选择
       - ☑️ 手动切换
       - ⭕ 直连请求
@@ -66,7 +66,7 @@ proxy-groups:
 
   - name: 墙内区域
     type: select
-    proxies: &C
+    proxies:
       - ⭕ 直连请求
       - 🚫 拒绝请求
       - 🎯 默认选择
@@ -129,7 +129,7 @@ proxy-groups:
 
   - name: Apple
     type: select
-    proxies:
+    proxies: &C
       - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -192,7 +192,7 @@ proxy-groups:
 
   - name: YouTube
     type: select
-    proxies:
+    proxies: &G
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🌏 亚洲
@@ -293,8 +293,6 @@ proxy-groups:
       - 🇺🇸 美国
       - 🇪🇺 欧洲
       - 🌍 非洲
-      - 🎯 默认选择
-      - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
     icon: 
