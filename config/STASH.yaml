@@ -474,7 +474,7 @@ rules:
   - RULE-SET,NetEaseMusic,网易云音乐
   - RULE-SET,Apple,Apple
   - RULE-SET,Global,Spotify
-  - RULE-SET,Tinder
+  - RULE-SET,Global,Tinder
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Global,X
   - RULE-SET,Global,Telegram
