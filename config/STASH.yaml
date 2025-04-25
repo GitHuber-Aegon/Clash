@@ -108,7 +108,6 @@ proxy-groups:
   - name: 哔哩哔哩
     type: select
     proxies:
-    proxies:
       *C
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
 
