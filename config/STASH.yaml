@@ -457,9 +457,10 @@ rules:
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Tinder,Tinder
   - RULE-SET,YouTube,YouTube
-  - RULE-SET,Global,X
+  - RULE-SET,X,X
   - RULE-SET,Telegram,Telegram
   - RULE-SET,AI,AI
+  - RULE-SET,Global,墙外世界
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
