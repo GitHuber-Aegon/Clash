@@ -1,4 +1,4 @@
-# 将proxy-providers里面链接中的“订阅链接”替换即可
+# 将proxy-providers里面url:""中的#订阅地址替换即可
 
 mixed-port: 7890
 allow-lan: true
@@ -9,12 +9,12 @@ ipv6: true
 external-controller: 127.0.0.1:9090
 
 subscribe-url: https://114.66.57.89:21000/c51ab4fd24b73ba910fa7affadd0c952
-#替换上面文字用于Stash获取机场流量信息并在主页显示
+#替换subscribe-url:后的订阅地址用于Stash获取机场流量信息并在主页显示
 
 proxy-providers:
   BYG:
     type: http
-    url: "https://114.66.57.89:21000/c51ab4fd24b73ba910fa7affadd0c952"
+    url: "https://114.66.57.89:21000/c51ab4fd24b73ba910fa7affadd0c952" #订阅地址
     # 以下方法任选其一⚠️有Clash订阅优先使用方法二❗️
     # 1.可以使用任意类型的链接仅替换上面文字，多个链接使用英文符号的竖杠|隔开一起写上即可
     # 2.Sub-Store与Clash类型订阅链接替换掉整个引号""内的链接
@@ -89,10 +89,12 @@ proxy-groups:
 
   - name: WeChat
     type: select
-    proxies: &O
+    proxies: &C
       - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
+      - 🎯 默认选择
+      - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
@@ -100,36 +102,25 @@ proxy-groups:
   - name: 爱奇艺
     type: select
     proxies:
-      - 🇨🇳 中国大陆
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+      *C
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png
 
   - name: 哔哩哔哩
     type: select
     proxies:
-      - 🇨🇳 中国大陆
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+    proxies:
+      *C
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
 
   - name: 网易云音乐
     type: select
     proxies:
-      - 🇨🇳 中国大陆
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+      *C
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
 
   - name: Apple
     type: select
-    proxies: &C
+    proxies: &B
       - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -151,43 +142,13 @@ proxy-groups:
   - name: Spotify
     type: select
     proxies:
-      - 🇨🇳 中国大陆
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - 🎯 默认选择
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+      *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
   - name: Tinder
     type: select
     proxies:
-      - 🇨🇳 中国大陆
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - 🎯 默认选择
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+      *B
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/tinder.png
 
   - name: YouTube
@@ -213,46 +174,21 @@ proxy-groups:
   - name: X
     type: select
     proxies:
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - 🎯 默认选择
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+      *G
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/x.png
 
   - name: Telegram
     type: select
     proxies:
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - 🎯 默认选择
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+      *G
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
 
   - name: AI
     type: select
     proxies:
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🌏 亚洲
@@ -260,9 +196,6 @@ proxy-groups:
       - 🇸🇬 狮城
       - 🇰🇷 韩国
       - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
       - 🌍 非洲
       - 🎯 默认选择
       - ☑️ 手动切换
@@ -309,7 +242,6 @@ proxy-groups:
       - 🚫 拒绝请求
       - 🎯 默认选择
       - ☑️ 手动切换
-    include-all: true
 
   - name: ⭕ 直连请求
     type: select
@@ -407,12 +339,33 @@ proxy-groups:
     filter: "埃及|尼日利亚|摩洛哥|南非"
 
 rule-providers:  # 远程规则集
-        
-  YouTube:
+
+  WeChat:
     type: http
     behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
-    path: ./ruleset/YouTube.yaml
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml"
+    path: ./ruleset/WeChat.yaml
+    interval: 86400
+        
+  iQIYI:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iQIYI/iQIYI.yaml"
+    path: ./ruleset/iQIYI.yaml
+    interval: 86400
+
+  BiliBili:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml"
+    path: ./ruleset/BiliBili.yaml
+    interval: 86400
+
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml"
+    path: ./ruleset/NetEaseMusic.yaml
     interval: 86400
 
   Apple:
@@ -423,25 +376,46 @@ rule-providers:  # 远程规则集
     path: ./ruleset/Apple.yaml
     interval: 86400
 
-  NetEaseMusic:
+  Spotify:
     type: http
     behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml"
-    path: ./ruleset/NetEaseMusic.yaml
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml"
+    path: ./ruleset/Spotify.yaml
     interval: 86400
 
-  BiliBili:
+  Tinder:
     type: http
     behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml"
-    path: ./ruleset/BiliBili.yaml
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash.yaml/Tinder.yaml"
+    path: ./ruleset/Tinder.yaml
     interval: 86400
 
-  OtherProxy:
+  YouTube:
     type: http
     behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/Infatuation-Fei/rule/main/Clash/Rule/OtherProxy.yaml"
-    path: ./ruleset/OtherProxy.yaml
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
+    path: ./ruleset/YouTube.yaml
+    interval: 86400
+
+  X:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml"
+    path: ./ruleset/X.yaml
+    interval: 86400
+
+  Telegram:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
+    path: ./ruleset/Telegram.yaml
+    interval: 86400
+
+ AI:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash.yaml/AI.yaml"
+    path: ./ruleset/AI.yaml
     interval: 86400
 
   China:
@@ -460,6 +434,13 @@ rule-providers:  # 远程规则集
     path: ./ruleset/Global-Domain.yaml
     interval: 86400
 
+  OtherProxy:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/Infatuation-Fei/rule/main/Clash/Rule/OtherProxy.yaml"
+    path: ./ruleset/OtherProxy.yaml
+    interval: 86400
+
   Lan: # 局域网
     type: http
     behavior: classical
@@ -468,17 +449,17 @@ rule-providers:  # 远程规则集
     interval: 86400
 
 rules:
-  - RULE-SET,China,WeChat
-  - RULE-SET,China,爱奇艺
+  - RULE-SET,WeChat,WeChat
+  - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
   - RULE-SET,NetEaseMusic,网易云音乐
   - RULE-SET,Apple,Apple
-  - RULE-SET,Global,Spotify
-  - RULE-SET,Global,Tinder
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,Tinder,Tinder
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Global,X
-  - RULE-SET,Global,Telegram
-  - RULE-SET,Global,AI
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,AI,AI
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
