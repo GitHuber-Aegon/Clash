@@ -406,8 +406,8 @@ rule-providers:  # 远程规则集
   X:
     type: http
     behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml"
-    path: ./ruleset/X.yaml
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
     interval: 86400
 
   Telegram:
