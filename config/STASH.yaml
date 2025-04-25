@@ -340,6 +340,13 @@ proxy-groups:
 
 rule-providers:  # 远程规则集
 
+  WhiteList:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash_rules/WhiteList.yaml"
+    path: ./ruleset/WhiteList.yaml
+    interval: 86400
+
   WeChat:
     type: http
     behavior: classical
@@ -449,6 +456,7 @@ rule-providers:  # 远程规则集
     interval: 86400
 
 rules:
+  - RULE-SET,WhiteList,白名单
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
