@@ -346,7 +346,7 @@ rule-providers:  # 远程规则集
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml"
     path: ./ruleset/WeChat.yaml
     interval: 86400
-        
+
   iQIYI:
     type: http
     behavior: classical
@@ -386,7 +386,7 @@ rule-providers:  # 远程规则集
   Tinder:
     type: http
     behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash.yaml/Tinder.yaml"
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash_rules/Tinder.yaml"
     path: ./ruleset/Tinder.yaml
     interval: 86400
 
@@ -411,10 +411,10 @@ rule-providers:  # 远程规则集
     path: ./ruleset/Telegram.yaml
     interval: 86400
 
- AI:
+  AI:
     type: http
     behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash.yaml/AI.yaml"
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash_rules/AI.yaml"
     path: ./ruleset/AI.yaml
     interval: 86400
 
