@@ -389,7 +389,7 @@ rule-providers:  # 远程规则集
 
   GitHub:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
     interval: 86400
