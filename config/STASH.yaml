@@ -439,13 +439,13 @@ rule-providers:  # 远程规则集
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml"
     interval: 86400
     
-  BlackList: # 黑名单
+  AppleOS_Update: # 黑名单
     type: http
     behavior: classical
     format: text
     url: "https://github.com/BlueGrave/Clash/raw/master/Ruleset/AppleOS_Update.list"
     interval: 86400
-    path: ./ruleset/BlackList.yaml
+    path: ./ruleset/AppleOS_Update.yaml
 
 rules:
   - RULE-SET,WhiteList,白名单
@@ -461,7 +461,7 @@ rules:
   - RULE-SET,Telegram,Telegram
   - RULE-SET,AI,AI
   - RULE-SET,Global,墙外世界
-  - RULE-SET,BlackList,黑名单
+  - RULE-SET,AppleOS_Update,黑名单
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
