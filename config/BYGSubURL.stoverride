@@ -1,6 +1,6 @@
 name: BYG SubURL 
 desc: 更换原有订阅地址
-category: proxy-providers:
+category: proxy-providers
 icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 
 proxy-providers:
