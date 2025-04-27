@@ -444,7 +444,9 @@ rule-providers:  # 远程规则集
     behavior: classical
     format: text
     url: "https://github.com/BlueGrave/Clash/raw/master/Ruleset/AppleOS_Update.list"
+         "https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/BanProgramAD.list"
     interval: 86400
+    path: ./ruleset/BlackList.yaml
 
 rules:
   - RULE-SET,WhiteList,白名单
