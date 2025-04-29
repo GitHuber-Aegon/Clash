@@ -235,8 +235,6 @@ proxy-groups:
 
   - name: ☑️ 手动切换
     type: select
-    proxies:
-      *D
     include-all: true
 
   - name: 🐟 漏网之鱼
