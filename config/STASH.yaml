@@ -236,7 +236,8 @@ proxy-groups:
   - name: ☑️ 手动切换
     type: select
     proxies:
-      *D
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
     use:
       - All  
 
