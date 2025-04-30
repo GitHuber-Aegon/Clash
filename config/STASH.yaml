@@ -464,7 +464,7 @@ rule-providers:  # 远程规则集
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple-update.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/IOS_Update.list
     interval: 86400
 
   BanProgramAD: # 屏蔽APP开屏广告
