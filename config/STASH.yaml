@@ -431,7 +431,7 @@ rule-providers:  # 远程规则集
   AI:
     type: http
     behavior: classical
-    format: yaml
+    format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
     interval: 86400
 
