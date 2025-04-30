@@ -496,7 +496,7 @@ rules:
   - RULE-SET,Telegram,Telegram
   - RULE-SET,AI,AI
   - RULE-SET,Global,墙外世界
-  - RULE-SET,AppleOS_Update,黑名单
+  - RULE-SET,IOS_Update,黑名单
   - RULE-SET,BanProgramAD,黑名单
   - RULE-SET,BanAD,黑名单
   - GEOIP,Lan,DIRECT,no-resolve
