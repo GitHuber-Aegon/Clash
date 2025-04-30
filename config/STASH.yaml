@@ -235,10 +235,10 @@ proxy-groups:
 
   - name: ☑️ 手动切换
     type: select
-    include-all: true
     proxies:
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+      - DIRECT
+      - REJECT-DROP
+    include-all: true
 
   - name: 🐟 漏网之鱼
     type: select
