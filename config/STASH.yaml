@@ -235,7 +235,11 @@ proxy-groups:
 
   - name: ☑️ 手动切换
     type: select
-    include-all: true
+    proxies:
+      - 自动选择
+      - 故障转移
+    use:
+      - All  
 
   - name: 🐟 漏网之鱼
     type: select
