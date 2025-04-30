@@ -238,8 +238,7 @@ proxy-groups:
     proxies:
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    use:
-      - All  
+    include-all: true
 
   - name: 🐟 漏网之鱼
     type: select
