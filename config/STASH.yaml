@@ -344,8 +344,8 @@ rule-providers:  # 远程规则集
   WhiteList:
     type: http
     behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash_rules/WhiteList.yaml
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/White.list
     interval: 86400
 
   WeChat:
@@ -400,8 +400,8 @@ rule-providers:  # 远程规则集
   Tinder:
     type: http
     behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/Stash_rules/Tinder.yaml
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Tinder.list
     interval: 86400
 
   YouTube:
