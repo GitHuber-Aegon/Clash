@@ -432,6 +432,13 @@ rule-providers:  # 远程规则集
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
     interval: 86400
 
+  Airport:
+    type: http
+    behavior: classical
+    format: text
+    url: https://github.com/GitHuber-Aegon/Clash/raw/refs/heads/main/ruleslist/Airport.list
+    interval: 86400
+
   China:
     type: http
     behavior: domain
@@ -495,6 +502,7 @@ rules:
   - RULE-SET,X,X
   - RULE-SET,Telegram,Telegram
   - RULE-SET,AI,AI
+  - RULE-SET,Airport,墙外世界
   - RULE-SET,Global,墙外世界
   - RULE-SET,IOS_Update,黑名单
   - RULE-SET,BanProgramAD,黑名单
