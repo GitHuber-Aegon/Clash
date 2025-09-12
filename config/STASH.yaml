@@ -510,4 +510,3 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
-
