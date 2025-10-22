@@ -14,7 +14,7 @@ subscribe-url: #订阅地址
 proxy-providers:
   ALL:
     type: http
-    url: "http://sub.store/download/%E9%AD%94%E6%88%92420G?target=Stash" #订阅地址
+    url: "https://msub.xn--bwwx30f.top/api/v1/client/subscribe?token=f5e18b965b1e11c2e4aac25eb5587822&flag=clash" #订阅地址
     # 以下方法任选其一⚠️有Clash订阅优先使用方法二❗️
     # 1.可以使用任意类型的链接仅替换上面文字，多个链接使用英文符号的竖杠|隔开一起写上即可
     # 2.Sub-Store与Clash类型订阅链接替换掉整个引号""内的链接
@@ -510,4 +510,5 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
 
