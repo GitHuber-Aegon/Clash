@@ -12,7 +12,7 @@ subscribe-url: #订阅地址
 #替换subscribe-url:后的#订阅地址用于Stash获取机场流量信息并在主页显示
 
 proxy-providers:
-  ALL:
+  MoJie:
     type: http
     url: "http://sub.store/download/%E9%AD%94%E6%88%92420G" #订阅地址
     # 以下方法任选其一⚠️有Clash订阅优先使用方法二❗️
@@ -510,6 +510,7 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
 
 
 
