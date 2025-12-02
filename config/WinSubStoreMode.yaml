@@ -8,7 +8,7 @@ log-level: info
 ipv6: true
 external-controller: 127.0.0.1:9090
 
-subscribe-url: #订阅地址
+subscribe-url: http://127.0.0.1:38324/download/%E7%99%BD%E6%9C%88%E5%85%89
 #替换subscribe-url:后的#订阅地址用于Stash获取机场流量信息并在主页显示
 
 proxy-providers:
@@ -55,14 +55,42 @@ dns:
 proxies:
             
 proxy-groups:
-  - name: 墙外世界
+  - name: 📶 测速最佳
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+
+  - name: 🎯 默认选择
     type: select
     proxies:
-      - 🎯 默认选择
+      - 📶 测速最佳
       - ☑️ 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
+
+  - name: ☑️ 手动切换
+    type: select
+    include-all: true
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+      - 🎯 默认选择
+      - ☑️ 手动切换
 
   - name: 墙内区域
     type: select
@@ -72,6 +100,37 @@ proxy-groups:
       - 🎯 默认选择
       - ☑️ 手动切换
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+
+  - name: 墙外世界
+    type: select
+    proxies:
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
+
+  - name: 🍄 TMS
+    type: select
+    proxies:
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - "🇭🇰|香港|HK|HongKong"
+      - "🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+
+  - name: 🍊 Beanfun
+    type: select
+    proxies:
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
 
   - name: 白名单
     type: select
@@ -207,43 +266,6 @@ proxy-groups:
       - ⭕ 直连请求
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
-      
-  - name: 📶 测速最佳
-    type: url-test
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    include-all: true
-
-  - name: 🎯 默认选择
-    type: select
-    proxies:
-      - 📶 测速最佳
-      - ☑️ 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-
-  - name: ☑️ 手动切换
-    type: select
-    include-all: true
-
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-      - 🎯 默认选择
-      - ☑️ 手动切换
 
   - name: ⭕ 直连请求
     type: select
@@ -340,6 +362,20 @@ proxy-groups:
     filter: "埃及|尼日利亚|摩洛哥|南非"
 
 rule-providers:  # 远程规则集
+
+  TMS:
+    type: http
+    behavior: classical
+    format: text
+    url: https://github.com/GitHuber-Aegon/Clash/raw/main/ruleslist/TMS.list
+    interval: 86400
+
+  Beanfun:
+    type: http
+    behavior: classical
+    format: text
+    url: Beanfun,https://github.com/GitHuber-Aegon/Clash/raw/main/ruleslist/BeanfunHK.list
+    interval: 86400
 
   WhiteList:
     type: http
@@ -489,6 +525,8 @@ rule-providers:  # 远程规则集
     interval: 86400
 
 rules:
+  - RULE-SET,TMS,TMS
+  - RULE-SET,Beanfun,Beanfun
   - RULE-SET,WhiteList,白名单
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
