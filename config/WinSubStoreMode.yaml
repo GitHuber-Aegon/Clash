@@ -1,0 +1,512 @@
+# 将proxy-providers里面url:""中的#订阅地址替换即可
+
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+ipv6: true
+external-controller: 127.0.0.1:9090
+
+subscribe-url: #订阅地址
+#替换subscribe-url:后的#订阅地址用于Stash获取机场流量信息并在主页显示
+
+proxy-providers:
+  MoJie:
+    type: http
+    url: "http://127.0.0.1:38324/download/%E7%99%BD%E6%9C%88%E5%85%89" #订阅地址
+    # 以下方法任选其一⚠️有Clash订阅优先使用方法二❗️
+    # 1.可以使用任意类型的链接仅替换上面文字，多个链接使用英文符号的竖杠|隔开一起写上即可
+    # 2.Sub-Store与Clash类型订阅链接替换掉整个引号""内的链接
+    interval: 86400
+    path: ./all.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+
+dns:
+  enable: true
+  ipv6: true
+  listen: 0.0.0.0:53
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '+.xboxlive.com'
+    - 'msftconnecttest.com'
+    - 'xbox.*.microsoft.com'
+    - '*.battlenet.com.cn'
+    - '*.battlenet.com'
+    - '*.blzstatic.cn'
+    - '*.battle.net'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
+proxies:
+            
+proxy-groups:
+  - name: 墙外世界
+    type: select
+    proxies:
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
+
+  - name: 墙内区域
+    type: select
+    proxies:
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+      - 🎯 默认选择
+      - ☑️ 手动切换
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+
+  - name: 白名单
+    type: select
+    proxies: &D
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdWhite.png
+
+  - name: 黑名单
+    type: select
+    proxies:
+      - 🚫 拒绝请求
+      - ⭕ 直连请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png
+
+  - name: WeChat
+    type: select
+    proxies: &C
+      - 🇨🇳 中国大陆
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
+
+  - name: 爱奇艺
+    type: select
+    proxies:
+      *C
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png
+
+  - name: 哔哩哔哩
+    type: select
+    proxies:
+      *C
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+
+  - name: 网易云音乐
+    type: select
+    proxies:
+      *C
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
+
+  - name: Apple
+    type: select
+    proxies: &B
+      - 🇨🇳 中国大陆
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+
+  - name: GitHub
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
+
+  - name: Spotify
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+
+  - name: Tinder
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/tinder.png
+
+  - name: YouTube
+    type: select
+    proxies: &G
+      - 🎯 默认选择
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+
+  - name: X
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/x.png
+
+  - name: Telegram
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
+
+  - name: AI
+    type: select
+    proxies:
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌍 非洲
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
+      
+  - name: 📶 测速最佳
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+
+  - name: 🎯 默认选择
+    type: select
+    proxies:
+      - 📶 测速最佳
+      - ☑️ 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+
+  - name: ☑️ 手动切换
+    type: select
+    include-all: true
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+      - 🎯 默认选择
+      - ☑️ 手动切换
+
+  - name: ⭕ 直连请求
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT-DROP
+
+  - name: 🚫 拒绝请求
+    type: select
+    proxies:
+      - REJECT-DROP
+      - DIRECT
+
+  - name: 🇨🇳 中国大陆
+    type: select
+    proxies:
+      *D
+
+  - name: 🇭🇰 香港
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "🇭🇰|香港|HK|HongKong"
+
+  - name: 🇹🇼 台湾
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
+
+  - name: 🌏 亚洲
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "日本|新加坡|韩|越|柬|马来西亚|泰|印度|菲|印尼|亚美尼亚|格鲁吉亚|土耳其|沙特|伊拉克|以色列|阿曼|阿拉伯联合|卡塔尔|斯坦|杜拜|迪拜"
+
+  - name: 🇯🇵 日本
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "🇯🇵|日本|JP|Japan"
+
+  - name: 🇸🇬 狮城
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "🇯🇵|新加坡|狮城|獅城|SG|Singapore"
+
+  - name: 🇰🇷 韩国
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "🇰🇷|韩|韓|KR|Korea"
+
+  - name: 🇦🇺 澳洲
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "🇦🇺|澳大利亚|澳大利亞|新西兰|新西蘭|纽西兰|紐西蘭|AU|AUS|Australia"
+
+  - name: 🌎 美洲
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "美国|加拿大|阿根廷|秘鲁|哥伦比亚|危地马拉|厄瓜多尔|哥斯达黎加|墨西哥|智利|玻利维亚|乌拉圭|巴西"
+
+  - name: 🇺🇸 美国
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "美国|美利坚|US|USA"
+
+  - name: 🇪🇺 欧洲
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "德国|法国|瑞士|英国|爱尔兰|冰岛|波兰|意大利|西班牙|荷兰|芬兰|奥地利|立陶宛|瑞典|希腊|拉脱维亚|挪威|丹麦|比利时|卢森堡|马其顿|阿尔巴尼亚|葡萄牙|乌克兰|摩尔多瓦|爱沙尼亚|克罗地亚|斯洛文尼亚|俄罗斯|保加利亚|塞尔维亚|塞浦路斯"
+
+  - name: 🌍 非洲
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    filter: "埃及|尼日利亚|摩洛哥|南非"
+
+rule-providers:  # 远程规则集
+
+  WhiteList:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/White.list
+    interval: 86400
+
+  WeChat:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
+    interval: 86400
+
+  iQIYI:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/iQIYI/iQIYI.yaml
+    interval: 86400
+
+  BiliBili:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
+    interval: 86400
+
+  NetEaseMusic:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml
+    interval: 86400
+
+  Apple:
+    type: http
+    behavior: domain
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Domain.txt
+    interval: 86400
+
+  GitHub:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
+    interval: 86400
+
+  Spotify:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    interval: 86400
+
+  Tinder:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Tinder.list
+    interval: 86400
+
+  YouTube:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    interval: 86400
+
+  X:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
+    interval: 86400
+
+  Telegram:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    interval: 86400
+
+  AI:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
+    interval: 86400
+
+  Airport:
+    type: http
+    behavior: classical
+    format: text
+    url: https://github.com/GitHuber-Aegon/Clash/raw/refs/heads/main/ruleslist/Airport.list
+    interval: 86400
+
+  China:
+    type: http
+    behavior: domain
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China_Domain.txt
+    interval: 86400
+
+  Global:
+    type: http
+    behavior: domain
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Domain.txt
+    interval: 86400
+
+  OtherProxy:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/Infatuation-Fei/rule/main/Clash/Rule/OtherProxy.yaml
+    interval: 86400
+
+  Lan: # 局域网
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml
+    interval: 86400
+
+  IOS_Update: # IOS更新
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/IOS_Update.list
+    interval: 86400
+
+  BanProgramAD: # 屏蔽APP开屏广告
+    type: http
+    behavior: classical
+    format: text
+    url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/BanProgramAD.list
+    interval: 86400
+
+  BanAD: # 屏蔽广告
+    type: http
+    behavior: classical
+    format: text
+    url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/BanAD.list
+    interval: 86400
+
+rules:
+  - RULE-SET,WhiteList,白名单
+  - RULE-SET,WeChat,WeChat
+  - RULE-SET,iQIYI,爱奇艺
+  - RULE-SET,BiliBili,哔哩哔哩
+  - RULE-SET,NetEaseMusic,网易云音乐
+  - RULE-SET,Apple,Apple
+  - RULE-SET,GitHub,GitHub
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,Tinder,Tinder
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,X,X
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,AI,AI
+  - RULE-SET,Airport,墙外世界
+  - RULE-SET,Global,墙外世界
+  - RULE-SET,IOS_Update,黑名单
+  - RULE-SET,BanProgramAD,黑名单
+  - RULE-SET,BanAD,黑名单
+  - GEOIP,Lan,DIRECT,no-resolve
+  - GEOIP,CN,墙内区域,no-resolve
+  - MATCH,🐟 漏网之鱼
