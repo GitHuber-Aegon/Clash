@@ -150,7 +150,7 @@ proxy-groups:
       *C
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
 
-  - name: 网易云音乐
+#  - name: 网易云音乐
     type: select
     proxies:
       *C
@@ -542,3 +542,4 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
