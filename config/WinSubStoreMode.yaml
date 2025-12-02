@@ -526,8 +526,8 @@ rule-providers:  # 远程规则集
     interval: 86400
 
 rules:
-  - RULE-SET,TMS,TMS
-  - RULE-SET,Beanfun,Beanfun
+  - RULE-SET,TMS,🍄 TMS
+  - RULE-SET,Beanfun,🍊 Beanfun
   - RULE-SET,WhiteList,白名单
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
@@ -549,5 +549,3 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
-
-
