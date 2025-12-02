@@ -498,18 +498,18 @@ rule-providers:  # 远程规则集
     interval: 86400
 
 #  IOS_Update: # IOS更新
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/IOS_Update.list
-    interval: 86400
+#    type: http
+#    behavior: classical
+#    format: text
+#    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/IOS_Update.list
+#    interval: 86400
 
 #  BanProgramAD: # 屏蔽APP开屏广告
-    type: http
-    behavior: classical
-    format: text
-    url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/BanProgramAD.list
-    interval: 86400
+#    type: http
+#    behavior: classical
+#    format: text
+#    url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/BanProgramAD.list
+#    interval: 86400
 
   BanAD: # 屏蔽广告
     type: http
