@@ -8,7 +8,7 @@ log-level: info
 ipv6: true
 external-controller: 127.0.0.1:9090
 
-subscribe-url: http://127.0.0.1:38324/download/%E7%99%BD%E6%9C%88%E5%85%89
+subscribe-url: #订阅地址
 #替换subscribe-url:后的#订阅地址用于Stash获取机场流量信息并在主页显示
 
 proxy-providers:
@@ -112,11 +112,12 @@ proxy-groups:
 
   - name: 🍄 TMS
     type: select
+    use:
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
     proxies:
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - "🇭🇰|香港|HK|HongKong"
-      - "🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
       - 🎯 默认选择
       - ☑️ 手动切换
       - ⭕ 直连请求
