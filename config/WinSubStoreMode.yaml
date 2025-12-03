@@ -366,11 +366,18 @@ rule-providers:  # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/TMS.list
     interval: 86400
 
-  Beanfun:
+  BeanfunHK:
     type: http
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/BeanfunHK.list
+    interval: 86400
+
+  BeanfunTW:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/BeanfunTW.list
     interval: 86400
 
   WhiteList:
@@ -523,7 +530,8 @@ rule-providers:  # 远程规则集
 rules:
   - RULE-SET,WhiteList,白名单
   - RULE-SET,TMS,🍄 TMS
-  - RULE-SET,Beanfun,🍊 Beanfun
+  - RULE-SET,BeanfunHK,🍊 Beanfun
+  - RULE-SET,BeanfunTW,🍊 Beanfun
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
@@ -544,3 +552,4 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
