@@ -463,7 +463,7 @@ rule-providers:  # 远程规则集
     type: http
     behavior: classical
     format: text
-    url: https://github.com/GitHuber-Aegon/Clash/raw/refs/heads/main/ruleslist/Airport.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
     interval: 86400
 
   China:
@@ -505,14 +505,14 @@ rule-providers:  # 远程规则集
 #    type: http
 #    behavior: classical
 #    format: text
-#    url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/BanProgramAD.list
+#    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 #    interval: 86400
 
   BanAD: # 屏蔽广告
     type: http
     behavior: classical
     format: text
-    url: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/BanAD.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
     interval: 86400
 
 rules:
@@ -539,4 +539,5 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
 
