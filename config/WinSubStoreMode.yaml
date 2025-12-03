@@ -59,6 +59,11 @@ proxy-groups:
     interval: 300
     include-all: true
 
+  - name: ☑️ 手动切换
+    type: select
+    proxies:
+    include-all: true
+
   - name: 🎯 默认选择
     type: select
     proxies:
@@ -78,11 +83,6 @@ proxy-groups:
       - ⭕ 直连请求
       - 🚫 拒绝请求
 
-  - name: ☑️ 手动切换
-    type: select
-    proxies:
-    include-all: true
-
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -90,24 +90,6 @@ proxy-groups:
       - 🚫 拒绝请求
       - 🎯 默认选择
       - ☑️ 手动切换
-
-  - name: 墙内区域
-    type: select
-    proxies:
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-      - 🎯 默认选择
-      - ☑️ 手动切换
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
-
-  - name: 墙外世界
-    type: select
-    proxies:
-      - 🎯 默认选择
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
 
   - name: 🍄 TMS
     type: select
@@ -127,6 +109,15 @@ proxy-groups:
       *M
     include-all: true
     filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"  
+
+  - name: 墙内区域
+    type: select
+    proxies:
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+      - 🎯 默认选择
+      - ☑️ 手动切换
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
 
   - name: WeChat
     type: select
@@ -157,6 +148,15 @@ proxy-groups:
 #    proxies:
 #      *C
 #    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
+
+  - name: 墙外世界
+    type: select
+    proxies:
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
 
   - name: Apple
     type: select
