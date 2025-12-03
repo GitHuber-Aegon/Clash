@@ -111,7 +111,6 @@ proxy-groups:
 
   - name: 🍄 TMS
     type: select
-    filter: "🇭🇰`香港`HK`HongKong`🇹🇼`台湾`台灣`臺灣`TW`TaiWan"
     proxies: &M
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -119,6 +118,10 @@ proxy-groups:
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
+    use:
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+    filter: "🇭🇰`香港`HK`HongKong`🇹🇼`台湾`台灣`臺灣`TW`TaiWan"  
 
   - name: 🍊 Beanfun
     type: select
@@ -541,6 +544,7 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
 
 
 
