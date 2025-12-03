@@ -358,14 +358,14 @@ rule-providers:  # 远程规则集
     type: http
     behavior: classical
     format: text
-    url: https://github.com/GitHuber-Aegon/Clash/raw/main/ruleslist/TMS.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/TMS.list
     interval: 86400
 
   Beanfun:
     type: http
     behavior: classical
     format: text
-    url: Beanfun,https://github.com/GitHuber-Aegon/Clash/raw/main/ruleslist/BeanfunHK.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/BeanfunHK.list
     interval: 86400
 
   WhiteList:
@@ -539,3 +539,4 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
