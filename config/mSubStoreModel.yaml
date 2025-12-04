@@ -56,9 +56,9 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
 
-proxies: #代理节点
+proxies: # 代理节点
             
-proxy-groups: #代理组
+proxy-groups: # 代理组
   - name: 📶 测速最佳
     type: url-test
     url: "http://www.gstatic.com/generate_204"
@@ -366,7 +366,7 @@ proxy-groups: #代理组
     filter: "埃及|尼日利亚|摩洛哥|南非"
     hidden: true
 
-rule-providers: #远程规则集
+rule-providers: # 远程规则集
 
   WhiteList:
     type: http
@@ -515,7 +515,7 @@ rule-providers: #远程规则集
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
     interval: 86400
 
-rules: #规则匹配
+rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
