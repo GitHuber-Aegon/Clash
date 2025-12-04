@@ -110,44 +110,44 @@ proxy-groups:
     include-all: true
     filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"  
 
-  - name: 墙内区域
+  - name: 🤖 AI
     type: select
     proxies:
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-      - 🎯 默认选择
-      - ☑️ 手动切换
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
-
-  - name: WeChat
-    type: select
-    proxies: &C
-      - 🇨🇳 中国大陆
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌍 非洲
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🎯 默认选择
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
 
-  - name: 爱奇艺
+  - name: 📥 DownloadTools
     type: select
-    proxies:
-      *C
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png
-
-  - name: 哔哩哔哩
-    type: select
-    proxies:
-      *C
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
-
-#  - name: 网易云音乐
-#    type: select
-#    proxies:
-#      *C
-#    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
+    proxies: &B
+      - 🇨🇳 中国大陆
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
 
   - name: 墙外世界
     type: select
@@ -229,25 +229,44 @@ proxy-groups:
       *G
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
 
-  - name: AI
+  - name: 墙内区域
     type: select
     proxies:
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+      - 🎯 默认选择
+      - ☑️ 手动切换
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+
+  - name: WeChat
+    type: select
+    proxies: &C
+      - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌍 非洲
       - 🎯 默认选择
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
+
+  - name: 爱奇艺
+    type: select
+    proxies:
+      *C
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png
+
+  - name: 哔哩哔哩
+    type: select
+    proxies:
+      *C
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+
+#  - name: 网易云音乐
+#    type: select
+#    proxies:
+#      *C
+#    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
 
   - name: 白名单
     type: select
@@ -385,6 +404,13 @@ rule-providers:  # 远程规则集
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/White.list
+    interval: 86400
+
+  DownloadTools:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/DownloadTools.list
     interval: 86400
 
   WeChat:
@@ -532,6 +558,8 @@ rules:
   - RULE-SET,TMS,🍄 TMS
   - RULE-SET,BeanfunHK,🍊 Beanfun
   - RULE-SET,BeanfunTW,🍊 Beanfun
+  - RULE-SET,AI,🤖 AI
+  - RULE-SET,DownloadTools,📥 DownloadTools
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
@@ -543,7 +571,6 @@ rules:
   - RULE-SET,YouTube,YouTube
   - RULE-SET,X,X
   - RULE-SET,Telegram,Telegram
-  - RULE-SET,AI,AI
   - RULE-SET,Airport,墙外世界
   - RULE-SET,Global,墙外世界
 #  - RULE-SET,IOS_Update,黑名单
