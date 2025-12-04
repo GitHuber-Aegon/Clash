@@ -204,16 +204,16 @@ proxy-groups: # 代理组
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
-  - name: 🅿️ PotPlayer
-    type: select
-    proxies:
-      *B
-
   - name: Tinder
     type: select
     proxies:
       *B
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/tinder.png
+
+  - name: 🅿️ PotPlayer
+    type: select
+    proxies:
+      *B
 
   - name: YouTube
     type: select
@@ -543,18 +543,18 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
     interval: 86400
 
-  PotPlayer:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
-    interval: 86400
-
   Tinder:
     type: http
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Tinder.list
+    interval: 86400
+
+  PotPlayer:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
     interval: 86400
 
   GitHub:
@@ -653,8 +653,8 @@ rules: # 规则匹配
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
-  - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Tinder,Tinder
+  - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,X,X
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Telegram,Telegram
