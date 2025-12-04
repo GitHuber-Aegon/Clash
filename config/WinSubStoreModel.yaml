@@ -147,6 +147,11 @@ proxy-groups: # 代理组
     proxies:
       *B
 
+  - name: ✈️ Airport
+    type: select
+    proxies:
+      *B
+
   - name: 🤖 AI
     type: select
     proxies:
@@ -646,7 +651,7 @@ rules: # 规则匹配
   - RULE-SET,YouTube,YouTube
   - RULE-SET,X,X
   - RULE-SET,Telegram,Telegram
-  - RULE-SET,Airport,墙外世界
+  - RULE-SET,Airport,✈️ Airport
   - RULE-SET,Global,墙外世界
 #  - RULE-SET,IOS_Update,黑名单
 #  - RULE-SET,BanProgramAD,黑名单
