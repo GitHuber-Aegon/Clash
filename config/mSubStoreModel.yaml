@@ -91,7 +91,7 @@ proxy-groups: # 代理组
 
   - name: 🐟 漏网之鱼
     type: select
-    proxies:
+    proxies: &D
       - ⭕ 直连请求
       - 🚫 拒绝请求
       - 🎯 默认选择
@@ -106,20 +106,15 @@ proxy-groups: # 代理组
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
 
-  - name: 墙内区域
+  - name: 🇨🇳 中国大陆
     type: select
     proxies:
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-      - 🎯 默认选择
-      - ☑️ 手动切换
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png
+      *D
 
   - name: 白名单
     type: select
-    proxies: &D
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+    proxies:
+      *D
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdWhite.png
 
   - name: 黑名单
@@ -261,11 +256,6 @@ proxy-groups: # 代理组
     proxies:
       - REJECT-DROP
       - DIRECT
-
-  - name: 🇨🇳 中国大陆
-    type: select
-    proxies:
-      *D
 
   - name: 🇭🇰 香港
     type: url-test
@@ -535,5 +525,5 @@ rules: # 规则匹配
   - RULE-SET,BanProgramAD,黑名单
   - RULE-SET,BanAD,黑名单
   - GEOIP,Lan,DIRECT,no-resolve
-  - GEOIP,CN,墙内区域,no-resolve
+  - GEOIP,CN,,DIRECT,no-resolve
   - MATCH,🐟 漏网之鱼
