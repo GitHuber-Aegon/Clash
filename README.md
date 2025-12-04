@@ -1,8 +1,13 @@
 # Clash config
 Clash ACL4SSR config & rules
+#Windows订阅转换远端
+https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/ACL4SSR_CFW.ini
 
-[https://github.com/GitHuber-Aegon/Clash/raw/main/config/ACL4SSR_CFW.ini](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/ACL4SSR_CFW.ini)
+#STASH订阅转换远端
+https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/ACL4SSR_STASH.ini
 
-https://github.com/GitHuber-Aegon/Clash/raw/main/config/ACL4SSR_STASH.ini
+#WindowsSubStore模板
+https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml
 
-https://github.com/GitHuber-Aegon/Clash/raw/main/config/STASH.yaml
+#移动端SubStore模板
+https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml
