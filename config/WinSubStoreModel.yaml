@@ -1,4 +1,7 @@
-# 将proxy-providers里面url:""中的#订阅地址替换即可
+# WindowsSubStore模板
+# https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml
+# 将上面地址添加到客户端SubStore使用
+# 将proxy-providers里面url:""中的订阅地址替换即可
 
 mixed-port: 7890
 allow-lan: true
@@ -8,10 +11,11 @@ log-level: info
 ipv6: true
 external-controller: 127.0.0.1:9090
 
-proxy-providers:
-  BYG:
+proxy-providers: # 远端代理集
+  ALL: # 机场名称用于识别
     type: http
-    url: "http://127.0.0.1:38324/download/%E7%99%BD%E6%9C%88%E5%85%89" #订阅地址
+    url: "http://127.0.0.1:38324/download/%E7%99%BD%E6%9C%88%E5%85%89"
+    # "https://api.v1.mk/sub?target=clash&url=订阅地址&emoji=true&list=true&udp=true"
     # 以下方法任选其一⚠️有Clash订阅优先使用方法二❗️
     # 1.可以使用任意类型的链接仅替换上面文字，多个链接使用英文符号的竖杠|隔开一起写上即可
     # 2.Sub-Store与Clash类型订阅链接替换掉整个引号""内的链接
@@ -49,9 +53,9 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
 
-proxies: #代理节点
+proxies: # 代理节点
             
-proxy-groups: #代理组
+proxy-groups: # 代理组
   - name: 📶 测速最佳
     type: url-test
     proxies:
@@ -407,7 +411,7 @@ proxy-groups: #代理组
     filter: "埃及|尼日利亚|摩洛哥|南非"
     hidden: true
 
-rule-providers: #远程规则集
+rule-providers: # 远程规则集
 
   TMS:
     type: http
@@ -619,7 +623,7 @@ rule-providers: #远程规则集
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
     interval: 86400
 
-rules: #规则匹配
+rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
   - RULE-SET,TMS,🍄 TMS
   - RULE-SET,BeanfunHK,🍊 Beanfun
