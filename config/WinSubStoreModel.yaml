@@ -418,6 +418,13 @@ proxy-groups: # 代理组
 
 rule-providers: # 远程规则集
 
+  WhiteList:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/White.list
+    interval: 86400
+
   TMS:
     type: http
     behavior: classical
@@ -453,18 +460,25 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/LeagurofLegends(TM)Client.list
     interval: 86400
 
-  WhiteList:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/White.list
-    interval: 86400
-
   DownloadTools:
     type: http
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/DownloadTools.list
+    interval: 86400
+
+  Airport:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
+    interval: 86400
+
+  AI:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
     interval: 86400
 
   WeChat:
@@ -544,13 +558,6 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
     interval: 86400
 
-  YouTube:
-    type: http
-    behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
-    interval: 86400
-
   X:
     type: http
     behavior: classical
@@ -558,25 +565,18 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
     interval: 86400
 
+  YouTube:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    interval: 86400
+
   Telegram:
     type: http
     behavior: classical
     format: yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
-    interval: 86400
-
-  AI:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
-    interval: 86400
-
-  Airport:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
     interval: 86400
 
   China:
@@ -635,8 +635,9 @@ rules: # 规则匹配
   - RULE-SET,BeanfunTW,🍊 Beanfun
   - RULE-SET,LeagueClient,LeagueClient
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
-  - RULE-SET,AI,🤖 AI
   - RULE-SET,DownloadTools,📥 DownloadTools
+  - RULE-SET,Airport,✈️ Airport
+  - RULE-SET,AI,🤖 AI
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
@@ -648,10 +649,9 @@ rules: # 规则匹配
   - RULE-SET,Spotify,Spotify
   - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Tinder,Tinder
-  - RULE-SET,YouTube,YouTube
   - RULE-SET,X,X
+  - RULE-SET,YouTube,YouTube
   - RULE-SET,Telegram,Telegram
-  - RULE-SET,Airport,✈️ Airport
   - RULE-SET,Global,墙外世界
 #  - RULE-SET,IOS_Update,黑名单
 #  - RULE-SET,BanProgramAD,黑名单
