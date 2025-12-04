@@ -112,8 +112,23 @@ proxy-groups:
 
   - name: LeagueClient
     type: select
-    proxies:
-      *B
+    proxies: &B
+      - 🇨🇳 中国大陆
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
+      - 🎯 默认选择
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/League_of_Legends.png
 
   - name: LOL(TM)Client
@@ -157,23 +172,8 @@ proxy-groups:
 
   - name: Apple
     type: select
-    proxies: &B
-      - 🇨🇳 中国大陆
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - 🎯 默认选择
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+    proxies:
+      *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
 
   - name: Microsoft
@@ -614,3 +614,4 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
