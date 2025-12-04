@@ -55,6 +55,44 @@ dns:
 proxies:
             
 proxy-groups:
+  - name: 📶 测速最佳
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 300
+    include-all: true
+    hidden: true
+
+  - name: 🎯 默认选择
+    type: select
+    proxies:
+      - 📶 测速最佳
+      - ☑️ 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+
+  - name: ☑️ 手动切换
+    type: select
+    include-all: true
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+      - 🎯 默认选择
+      - ☑️ 手动切换
+
   - name: 墙外世界
     type: select
     proxies:
@@ -207,43 +245,6 @@ proxy-groups:
       - ⭕ 直连请求
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
-      
-  - name: 📶 测速最佳
-    type: url-test
-    url: "http://www.gstatic.com/generate_204"
-    interval: 300
-    include-all: true
-
-  - name: 🎯 默认选择
-    type: select
-    proxies:
-      - 📶 测速最佳
-      - ☑️ 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-
-  - name: ☑️ 手动切换
-    type: select
-    include-all: true
-
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-      - 🎯 默认选择
-      - ☑️ 手动切换
 
   - name: ⭕ 直连请求
     type: select
