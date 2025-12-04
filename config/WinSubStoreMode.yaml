@@ -194,6 +194,11 @@ proxy-groups:
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
+  - name: 🅿️ PotPlayer
+    type: select
+    proxies:
+      *B
+
   - name: Tinder
     type: select
     proxies:
@@ -467,14 +472,14 @@ rule-providers:  # 远程规则集
 
   OneDrive:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list
     interval: 86400
 
   Microsoft:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Miceosoft.list
     interval: 86400
@@ -484,6 +489,13 @@ rule-providers:  # 远程规则集
     behavior: classical
     format: yaml
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    interval: 86400
+
+  PotPlayer:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
     interval: 86400
 
   Tinder:
@@ -614,4 +626,3 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
-
