@@ -368,6 +368,7 @@ proxy-groups:
     lazy: true
     include-all: true
     filter: "🇦🇺|澳大利亚|澳大利亞|新西兰|新西蘭|纽西兰|紐西蘭|AU|AUS|Australia"
+    hidden: true
 
   - name: 🌎 美洲
     type: url-test
