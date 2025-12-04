@@ -235,6 +235,12 @@ proxy-groups: # 代理组
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 
+  - name: X
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/x.png
+
   - name: Telegram
     type: select
     proxies:
@@ -507,13 +513,6 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Miceosoft.list
     interval: 86400
 
-  GitHub:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
-    interval: 86400
-
   Spotify:
     type: http
     behavior: classical
@@ -535,6 +534,20 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
     interval: 86400
 
+  GitHub:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
+    interval: 86400
+
+  X:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
+    interval: 86400
+
   YouTube:
     type: http
     behavior: classical
@@ -554,6 +567,13 @@ rule-providers: # 远程规则集
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18.list
+    interval: 86400
+
+  WallOutside:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/WallOutside.list
     interval: 86400
 
 #  WeChat:
@@ -654,10 +674,11 @@ rules: # 规则匹配
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Tinder,Tinder
   - RULE-SET,PotPlayer,🅿️ PotPlayer
-#  - RULE-SET,X,X
+  - RULE-SET,X,X
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Telegram,Telegram
   - RULE-SET,18,🔞 十八禁
+  - RULE-SET,WallOutside,墙外世界
   - RULE-SET,Global,墙外世界
 #  - RULE-SET,IOS_Update,黑名单
 #  - RULE-SET,BanProgramAD,黑名单
