@@ -129,7 +129,7 @@ proxy-groups:
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/League_of_Legends.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LOL.png
 
   - name: LOL(TM)Client
     type: select
@@ -180,7 +180,7 @@ proxy-groups:
     type: select
     proxies:
       *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Windows.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 
   - name: GitHub
     type: select
@@ -614,3 +614,4 @@ rules:
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,墙内区域,no-resolve
   - MATCH,🐟 漏网之鱼
+
