@@ -614,7 +614,7 @@ rules:
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
-  - RULE-SET,PotPlayer🅿️ PotPlayer
+  - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Tinder,Tinder
   - RULE-SET,YouTube,YouTube
   - RULE-SET,X,X
