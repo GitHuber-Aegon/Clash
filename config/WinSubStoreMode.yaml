@@ -135,7 +135,7 @@ proxy-groups:
     type: select
     proxies:
       *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/League_of_Legends.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LOL.png
 
   - name: 📥 DownloadTools
     type: select
