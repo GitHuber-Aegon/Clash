@@ -66,7 +66,7 @@ proxy-groups: # 代理组
     include-all: true
     hidden: true
 
-  - name: 🎯 默认选择
+  - name: 🗺 境外漫游
     type: select
     proxies:
       - 📶 测速最佳
@@ -89,24 +89,15 @@ proxy-groups: # 代理组
     type: select
     include-all: true
 
-  - name: 🐟 漏网之鱼
+  - name: 🇨🇳 中国大陆
     type: select
     proxies: &D
       - ⭕ 直连请求
       - 🚫 拒绝请求
-      - 🎯 默认选择
+      - 🗺 境外漫游
       - ☑️ 手动切换
 
-  - name: 墙外世界
-    type: select
-    proxies:
-      - 🎯 默认选择
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
-
-  - name: 🇨🇳 中国大陆
+  - name: 🐟 漏网之鱼
     type: select
     proxies:
       *D
@@ -138,7 +129,7 @@ proxy-groups: # 代理组
       - 🇰🇷 韩国
       - 🇦🇺 澳洲
       - 🌍 非洲
-      - 🎯 默认选择
+      - 🗺 境外漫游
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
@@ -150,7 +141,7 @@ proxy-groups: # 代理组
       - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - 🎯 默认选择
+      - 🗺 境外漫游
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
@@ -189,7 +180,7 @@ proxy-groups: # 代理组
       - 🇺🇸 美国
       - 🇪🇺 欧洲
       - 🌍 非洲
-      - 🎯 默认选择
+      - 🗺 境外漫游
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
@@ -216,7 +207,7 @@ proxy-groups: # 代理组
   - name: YouTube
     type: select
     proxies: &G
-      - 🎯 默认选择
+      - 🗺 境外漫游
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🌏 亚洲
@@ -519,8 +510,8 @@ rules: # 规则匹配
   - RULE-SET,X,X
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Telegram,Telegram
-  - RULE-SET,Airport,墙外世界
-  - RULE-SET,Global,墙外世界
+  - RULE-SET,Airport,🗺 境外漫游
+  - RULE-SET,Global,🗺 境外漫游
   - RULE-SET,IOS_Update,黑名单
   - RULE-SET,BanProgramAD,黑名单
   - RULE-SET,BanAD,黑名单
