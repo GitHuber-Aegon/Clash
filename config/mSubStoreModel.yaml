@@ -236,6 +236,19 @@ proxy-groups: # 代理组
       *G
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
 
+  - name: 白名单
+    type: select
+    proxies:
+      *D
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdWhite.png
+
+  - name: 黑名单
+    type: select
+    proxies:
+      - 🚫 拒绝请求
+      - ⭕ 直连请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AdBlack.png
+
   - name: ⭕ 直连请求
     type: select
     proxies:
