@@ -66,6 +66,10 @@ proxy-groups: # 代理组
     include-all: true
     hidden: true
 
+  - name: ☑️ 手动切换
+    type: select
+    include-all: true
+
   - name: 🗺 境外漫游
     type: select
     proxies:
@@ -84,10 +88,6 @@ proxy-groups: # 代理组
       - 🌍 非洲
       - ⭕ 直连请求
       - 🚫 拒绝请求
-
-  - name: ☑️ 手动切换
-    type: select
-    include-all: true
 
   - name: 🇨🇳 中国大陆
     type: select
