@@ -516,5 +516,5 @@ rules: # 规则匹配
   - RULE-SET,BanProgramAD,黑名单
   - RULE-SET,BanAD,黑名单
   - GEOIP,Lan,DIRECT,no-resolve
-  - GEOIP,CN,,DIRECT,no-resolve
+  - GEOIP,CN,DIRECT,no-resolve
   - MATCH,🐟 漏网之鱼
