@@ -240,13 +240,13 @@ proxy-groups: # 代理组
     type: select
     proxies:
       - DIRECT
-      - REJECT-DROP
+    hidden: true
 
   - name: 🚫 拒绝请求
     type: select
     proxies:
       - REJECT-DROP
-      - DIRECT
+    hidden: true
 
   - name: 🇭🇰 香港
     type: url-test
