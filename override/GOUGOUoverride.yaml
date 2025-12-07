@@ -1,4 +1,2 @@
 proxy-providers: # 远端代理集
-  ALL: # 机场名称用于识别
-    type: http
-    url!: "http://127.0.0.1:38324/download/%E7%8B%97%E7%8B%97%E5%8A%A0%E9%80%9F"
+  url: "http://127.0.0.1:38324/download/%E7%8B%97%E7%8B%97%E5%8A%A0%E9%80%9F"
