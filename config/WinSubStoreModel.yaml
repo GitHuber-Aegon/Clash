@@ -54,7 +54,7 @@ dns:
 
 proxies: # 代理节点
             
-proxy-groups: # 代理组
+proxy-groups: # 策略组
   - name: 📶 测速最佳
     type: url-test
     proxies:
