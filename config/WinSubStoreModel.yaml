@@ -22,9 +22,9 @@ proxy-providers: # 远端代理集
     interval: 86400
     path: ./all.yaml
     health-check:
-    enable: true
-    interval: 600
-    url: http://www.gstatic.com/generate_204
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
 
 dns:
   enable: true
@@ -654,4 +654,5 @@ rules: # 规则匹配
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,🐟 漏网之鱼
+
 
