@@ -653,4 +653,3 @@ rules: # 规则匹配
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,🐟 漏网之鱼
-
