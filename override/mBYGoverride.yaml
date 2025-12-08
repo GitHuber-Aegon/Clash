@@ -3,7 +3,7 @@ desc: 更换模板原有订阅地址
 category: proxy-providers
 icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 
-proxy-providers: # 远端代理集
+proxy-providers: # 远程代理集
   provider01: # 集合名称
     type: http
     url: "http://sub.store/download/%E7%99%BD%E6%9C%88%E5%85%89"
