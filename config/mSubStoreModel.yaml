@@ -514,17 +514,17 @@ rule-providers: # 远程规则集
 
 rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
+  - RULE-SET,Apple,Apple
+  - RULE-SET,GitHub,GitHub
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,Tinder,Tinder
+  - RULE-SET,Airport,✈️ Airport
   - RULE-SET,AI,🤖AI
 #  - RULE-SET,X,X
   - RULE-SET,Google,Google
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Telegram,Telegram
   - RULE-SET,18,🔞 十八禁
-  - RULE-SET,Apple,Apple
-  - RULE-SET,GitHub,GitHub
-  - RULE-SET,Spotify,Spotify
-  - RULE-SET,Tinder,Tinder
-  - RULE-SET,Airport,✈️ Airport
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
