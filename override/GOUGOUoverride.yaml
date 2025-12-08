@@ -1,4 +1,4 @@
-proxy-providers: # 远端代理集
+proxy-providers: # 远程代理集
   provider01!: # 集合名称
     type: http
     url: "http://127.0.0.1:38324/download/%E7%8B%97%E7%8B%97%E5%8A%A0%E9%80%9F"
