@@ -633,12 +633,6 @@ rules: # 规则匹配
   - RULE-SET,BeanfunTW,🍊 Beanfun
   - RULE-SET,LeagueClient,LeagueClient
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
-  - RULE-SET,AI,🤖 AI
-#  - RULE-SET,X,X
-  - RULE-SET,Google,Google
-  - RULE-SET,YouTube,YouTube
-  - RULE-SET,Telegram,Telegram
-  - RULE-SET,18,🔞 十八禁
   - RULE-SET,Apple,Apple
   - RULE-SET,OneDrive,Microsoft
   - RULE-SET,Microsoft,Microsoft
@@ -648,6 +642,12 @@ rules: # 规则匹配
   - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,DownloadTools,📥 DownloadTools
+  - RULE-SET,AI,🤖 AI
+#  - RULE-SET,X,X
+  - RULE-SET,Google,Google
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,18,🔞 十八禁
 #  - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
