@@ -644,8 +644,8 @@ rules: # 规则匹配
   - RULE-SET,DownloadTools,📥 DownloadTools
   - RULE-SET,AI,🤖 AI
 #  - RULE-SET,X,X
-  - RULE-SET,Google,Google
   - RULE-SET,YouTube,YouTube
+  - RULE-SET,Google,Google
   - RULE-SET,Telegram,Telegram
   - RULE-SET,18,🔞 十八禁
 #  - RULE-SET,WeChat,WeChat
