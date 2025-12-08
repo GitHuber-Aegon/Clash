@@ -146,16 +146,6 @@ proxy-groups: # 策略组
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LOL.png
 
-  - name: 📥 DownloadTools
-    type: select
-    proxies:
-      *B
-
-  - name: ✈️ Airport
-    type: select
-    proxies:
-      *B
-
   - name: 🤖 AI
     type: select
     proxies:
@@ -243,6 +233,16 @@ proxy-groups: # 策略组
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/tinder.png
 
   - name: 🅿️ PotPlayer
+    type: select
+    proxies:
+      *B
+
+  - name: ✈️ Airport
+    type: select
+    proxies:
+      *B
+
+  - name: 📥 DownloadTools
     type: select
     proxies:
       *B
@@ -451,20 +451,6 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/LeagurofLegends(TM)Client.list
     interval: 86400
 
-  DownloadTools:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/DownloadTools.list
-    interval: 86400
-
-  Airport:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
-    interval: 86400
-
   AI:
     type: http
     behavior: classical
@@ -502,9 +488,9 @@ rule-providers: # 远程规则集
 
   Apple:
     type: http
-    behavior: domain
+    behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Domain.txt
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list
     interval: 86400
 
   OneDrive:
@@ -531,8 +517,8 @@ rule-providers: # 远程规则集
   Spotify:
     type: http
     behavior: classical
-    format: yaml
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
     interval: 86400
 
   Tinder:
@@ -547,6 +533,20 @@ rule-providers: # 远程规则集
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
+    interval: 86400
+
+  Airport:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
+    interval: 86400
+
+  DownloadTools:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/DownloadTools.list
     interval: 86400
 
 #  WeChat:
@@ -633,8 +633,6 @@ rules: # 规则匹配
   - RULE-SET,BeanfunTW,🍊 Beanfun
   - RULE-SET,LeagueClient,LeagueClient
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
-  - RULE-SET,DownloadTools,📥 DownloadTools
-  - RULE-SET,Airport,✈️ Airport
   - RULE-SET,AI,🤖 AI
 #  - RULE-SET,X,X
   - RULE-SET,Google,Google
@@ -648,6 +646,8 @@ rules: # 规则匹配
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Tinder,Tinder
   - RULE-SET,PotPlayer,🅿️ PotPlayer
+  - RULE-SET,Airport,✈️ Airport
+  - RULE-SET,DownloadTools,📥 DownloadTools
 #  - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
