@@ -202,7 +202,7 @@ proxy-groups: # 策略组
     proxies:
       *B
 
-  - name: WeChat
+  - name: 小红书
     type: select
     proxies: &C
       - 🇨🇳 中国大陆
@@ -212,6 +212,12 @@ proxy-groups: # 策略组
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/XiaoHongShu.png
+
+  - name: WeChat
+    type: select
+    proxies:
+      *C
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
 
   - name: 爱奇艺
@@ -435,6 +441,13 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
     interval: 86400
 
+  RedNote:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/XiaoHongShu/XiaoHongShu.list
+    interval: 86400
+
   WeChat:
     type: http
     behavior: classical
@@ -525,6 +538,7 @@ rules: # 规则匹配
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Telegram,Telegram
   - RULE-SET,18,🔞 十八禁
+  - RULE-SET,RedNote,小红书
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
