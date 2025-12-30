@@ -1,0 +1,13 @@
+proxy-providers: # 远程代理集
+  provider01: # 集合名称
+    type: http
+    url: "http://127.0.0.1:38324/download/%E7%8B%97%E7%8B%97%E5%8A%A0%E9%80%9F"
+    # 以下方法任选其一⚠️有Clash订阅优先使用方法二❗️
+    # 1.可以使用任意类型的链接仅替换上面文字，多个链接使用英文符号的竖杠|隔开一起写上即可
+    # 2.Sub-Store与Clash类型订阅地址替换掉整个引号""内的链接
+    path:
+    interval: 86400
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204

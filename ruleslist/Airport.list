@@ -1,4 +1,14 @@
-;白月光
+#白月光
 DOMAIN-SUFFIX,bygcloud.com
 DOMAIN,bygcloud.com
 DOMAIN-KEYWORD,bygcloud
+
+#魔戒
+DOMAIN-SUFFIX,mojie.app
+DOMAIN,mojie.app
+DOMAIN-KEYWORD,mojie
+
+#CloudFisher
+DOMAIN-SUFFIX,cloudfisher.one
+DOMAIN,cloudfisher.one
+DOMAIN-KEYWORD,cloudfisher
