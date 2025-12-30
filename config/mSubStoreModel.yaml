@@ -158,7 +158,7 @@ proxy-groups: # 策略组
     proxies:
       *G
 
-  - name: Apple
+  - name: GitHub
     type: select
     proxies: &B
       - 🇨🇳 中国大陆
@@ -177,25 +177,25 @@ proxy-groups: # 策略组
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
-
-  - name: GitHub
-    type: select
-    proxies:
-      *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
-
-  - name: Spotify
-    type: select
-    proxies:
-      *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
   - name: Tinder
     type: select
     proxies:
       *B
     icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/tinder.png
+
+  - name: Apple
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+
+  - name: Spotify
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
   - name: ✈️ Airport
     type: select
@@ -406,13 +406,6 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18.list
     interval: 86400
 
-  Apple:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list
-    interval: 86400
-
   GitHub:
     type: http
     behavior: classical
@@ -420,18 +413,25 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
     interval: 86400
 
-  Spotify:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
-    interval: 86400
-
   Tinder:
     type: http
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Tinder.list
+    interval: 86400
+
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list
+    interval: 86400
+
+  Spotify:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
     interval: 86400
 
   Airport:
@@ -527,22 +527,22 @@ rule-providers: # 远程规则集
 
 rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
-  - RULE-SET,Apple,Apple
   - RULE-SET,GitHub,GitHub
+  - RULE-SET,Tinder,Tinder  
+  - RULE-SET,Apple,Apple
   - RULE-SET,Spotify,Spotify
-  - RULE-SET,Tinder,Tinder
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,AI,🤖AI
-#  - RULE-SET,X,X
-  - RULE-SET,Google,Google
-  - RULE-SET,YouTube,YouTube
-  - RULE-SET,Telegram,Telegram
-  - RULE-SET,18,🔞 十八禁
   - RULE-SET,RedNote,小红书
   - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
   - RULE-SET,NetEaseMusic,网易云音乐
+#  - RULE-SET,X,X
+  - RULE-SET,Google,Google
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,18,🔞 十八禁
   - RULE-SET,WallOutside,🗺 境外漫游
   - RULE-SET,Global,🗺 境外漫游
   - RULE-SET,IOS_Update,黑名单
