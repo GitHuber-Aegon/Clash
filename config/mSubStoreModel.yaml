@@ -212,7 +212,7 @@ proxy-groups: # 策略组
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/XiaoHongShu.png
+    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/XiaoHongShu.png
 
   - name: WeChat
     type: select
