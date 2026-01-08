@@ -119,13 +119,13 @@ proxy-groups: # 策略组
     include-all: true
     filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
 
-  - name: 📺 myTVSPUER
+  - name: myTVSPUER
     type: select
     proxies:
       *M
     include-all: true
     filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
-    icon: 
+    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/myTVSUPER.png
 
   - name: LeagueClient
     type: select
@@ -646,7 +646,7 @@ rules: # 规则匹配
   - RULE-SET,TMS,🍄 TMS
   - RULE-SET,BeanfunHK,🍊 Beanfun
   - RULE-SET,BeanfunTW,🍊 Beanfun
-  - RULE-SET,myTVSPUER,📺 myTVSPUER
+  - RULE-SET,myTVSPUER,myTVSPUER
   - RULE-SET,LeagueClient,LeagueClient
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
   - RULE-SET,Apple,Apple
