@@ -119,6 +119,14 @@ proxy-groups: # 策略组
     include-all: true
     filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
 
+  - name: 📺 myTVSPUER
+    type: select
+    proxies:
+      *M
+    include-all: true
+    filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
+    icon: 
+
   - name: LeagueClient
     type: select
     proxies: &B
@@ -195,7 +203,7 @@ proxy-groups: # 策略组
     type: select
     proxies:
       *G
-    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png 
 
   - name: 🔞 十八禁
     type: select
@@ -437,6 +445,13 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/BeanfunTW.list
     interval: 86400
 
+  myTVSPUER:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/myTVSUPER.list
+    interval: 86400
+
   LeagueClient:
     type: http
     behavior: classical
@@ -631,6 +646,7 @@ rules: # 规则匹配
   - RULE-SET,TMS,🍄 TMS
   - RULE-SET,BeanfunHK,🍊 Beanfun
   - RULE-SET,BeanfunTW,🍊 Beanfun
+  - RULE-SET,myTVSPUER,📺 myTVSPUER
   - RULE-SET,LeagueClient,LeagueClient
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
   - RULE-SET,Apple,Apple
