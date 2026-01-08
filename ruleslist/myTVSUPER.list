@@ -8,7 +8,11 @@ DOMAIN-SUFFIX,tvsquared.com
 DOMAIN-SUFFIX,collector-31522.tvsquared.com
 DOMAIN-SUFFIX,clarity.ms
 DOMAIN-SUFFIX,b.clarity.ms
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,sc.omtrdc.net
+DOMAIN-SUFFIX,mytvsuperlimited.sc.omtrdc.net
 DOMAIN,img.tvb.com
 DOMAIN,content-api.mytvsuper.com
 DOMAIN,collector-31522.tvsquared.com
 DOMAIN,b.clarity.ms
+DOMAIN,mytvsuperlimited.sc.omtrdc.net
