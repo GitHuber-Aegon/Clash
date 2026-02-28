@@ -684,8 +684,8 @@ rules: # 规则匹配
   - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,DownloadTools,📥 DownloadTools
+  - RULE-SET,Antigravity,🌌 Antigravity
   - RULE-SET,AI,🤖 AI
-  - RULE-SET,Antigravity,🌌 Antigravity  
 #  - RULE-SET,X,X
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Google,Google
