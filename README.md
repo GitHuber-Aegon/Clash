@@ -21,8 +21,8 @@
 
 | 平台版本 | 订阅文件 (点击跳转) | 订阅链接 (手动复制/右键复制) |
 | :--- | :--- | :--- |
-| **💻 Windows** | [WinSubStoreModel.yaml](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml) | `https://raw.githubusercon...` |
-| **📱 移动端** | [mSubStoreModel.yaml](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml) | `https://raw.githubusercon...` |
+| **💻 Windows** | [WinSubStoreModel.yaml](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml) | `https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml` |
+| **📱 移动端** | [mSubStoreModel.yaml](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml) | `https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml` |
 
 ### 📋 快速复制订阅地址
 *点击下方代码块右上角的图标即可一键复制：*
