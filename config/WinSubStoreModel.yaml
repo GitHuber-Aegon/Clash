@@ -669,7 +669,6 @@ rule-providers: # 远程规则集
 
 rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
-  - RULE-SET,Antigravity,🌌 Antigravity
   - RULE-SET,TMS,🍄 TMS
   - RULE-SET,BeanfunHK,🍊 Beanfun
   - RULE-SET,BeanfunTW,🍊 Beanfun
@@ -686,6 +685,7 @@ rules: # 规则匹配
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,DownloadTools,📥 DownloadTools
   - RULE-SET,AI,🤖 AI
+  - RULE-SET,Antigravity,🌌 Antigravity  
 #  - RULE-SET,X,X
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Google,Google
