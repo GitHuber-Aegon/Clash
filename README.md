@@ -19,10 +19,13 @@
 
 点击下方链接可直接获取订阅模型，专为 Sub-Store 与 Clash 设计：
 
-| 平台版本 | 原始订阅链接 (RAW) | 快捷操作 |
-| :--- | :--- | :--- |
-| **💻 Windows** | [WinSubStoreModel.yaml](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml) | [点击复制](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml) |
-| **📱 移动端** | [mSubStoreModel.yaml](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml) | [点击复制](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml) |
+| 平台版本 | 订阅链接 (可直接复制) |
+| :--- | :--- |
+| **💻 Windows** | `https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml` |
+| **📱 移动端** | `https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml` |
+
+> [!TIP]
+> 在 GitHub 网页端，您可以直接点击链接右侧出现的复制图标，或通过右键点击链接选择“复制链接地址”。
 
 ---
 
