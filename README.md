@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
 
 **一个高度定制化、专业且美观的 Clash 配置文件体系。**
-*针对 Windows 及移动端深度优化，内置多项 AI 助手与生产力工具加速规则。*
+*针对 Windows 及移动端深度优化，内置多项 AI 助手与生产力工具分流规则。*
 
 [快速开始](#-传送门) • [特性介绍](#-主要特性) • [目录结构](#-项目结构) • [鸣谢](#-致谢)
 
