@@ -19,8 +19,8 @@
 
 点击下方链接可跳转至 RAW 文件，或使用右侧代码块一键复制订阅地址：
 
-| 平台版本 | 订阅文件 (点击跳转) | 订阅链接 (手动复制/右键复制) |
-| :--- | :--- | :--- |
+| 平台版本 | 订阅文件 (点击跳转) |
+| :--- | :--- |
 | **💻 Windows** | [WinSubStoreModel.yaml](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml) |
 | **📱 移动端** | [mSubStoreModel.yaml](https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml) |
 
