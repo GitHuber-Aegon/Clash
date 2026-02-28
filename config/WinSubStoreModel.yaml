@@ -154,6 +154,25 @@ proxy-groups: # 策略组
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LOL.png
 
+  - name: 🌌 Antigravity
+    type: select
+    proxies:
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌍 非洲
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🗺 境外漫游
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+
   - name: 🤖 AI
     type: select
     proxies:
@@ -473,6 +492,13 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
     interval: 86400
 
+  Antigravity:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Antigravity.list
+    interval: 86400
+
   Google:
     type: http
     behavior: classical
@@ -643,6 +669,7 @@ rule-providers: # 远程规则集
 
 rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
+  - RULE-SET,Antigravity,🌌 Antigravity
   - RULE-SET,TMS,🍄 TMS
   - RULE-SET,BeanfunHK,🍊 Beanfun
   - RULE-SET,BeanfunTW,🍊 Beanfun

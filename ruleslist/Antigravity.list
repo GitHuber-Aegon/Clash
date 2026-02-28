@@ -1,0 +1,18 @@
+# Antigravity 规则列表
+# 包含 Antigravity 核心域名及 Google 相关服务
+
+# Antigravity 核心
+DOMAIN-SUFFIX,antigravity.google
+
+# Google 服务 (Antigravity 依赖)
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,googletagmanager.com
+DOMAIN-SUFFIX,google.cn
+
+# 其他可能需要的域名
+DOMAIN-KEYWORD,antigravity
