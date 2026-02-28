@@ -154,7 +154,7 @@ proxy-groups: # 策略组
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LOL.png
 
-  - name: 🌌 Antigravity
+  - name: Antigravity
     type: select
     proxies:
       - 🌎 美洲
@@ -172,6 +172,7 @@ proxy-groups: # 策略组
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
 
   - name: 🤖 AI
     type: select
@@ -684,7 +685,7 @@ rules: # 规则匹配
   - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,DownloadTools,📥 DownloadTools
-  - RULE-SET,Antigravity,🌌 Antigravity
+  - RULE-SET,Antigravity,Antigravity
   - RULE-SET,AI,🤖 AI
 #  - RULE-SET,X,X
   - RULE-SET,YouTube,YouTube
