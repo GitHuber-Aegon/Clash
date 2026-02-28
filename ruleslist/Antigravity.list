@@ -16,3 +16,6 @@ DOMAIN-SUFFIX,google.cn
 
 # 其他可能需要的域名
 DOMAIN-KEYWORD,antigravity
+
+# Antigravity 进程
+PROCESS-NAME,Antigravity.exe
