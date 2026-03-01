@@ -3,6 +3,9 @@ desc: 更换模板原有订阅地址
 category: proxy-providers
 icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 
+subscribe-url: "http://sub.store/download/%E9%AD%94%E6%88%92420G"
+# 替换subscribe-url:后的订阅地址用于Stash获取机场流量信息并在主页显示
+
 proxy-providers: # 远程代理集
   provider01: # 集合名称
     type: http
