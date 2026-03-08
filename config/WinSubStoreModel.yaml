@@ -214,6 +214,7 @@ proxy-groups: # 策略组
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
+    url: "www.google.com"  
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 
   - name: YouTube
