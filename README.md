@@ -71,7 +71,7 @@ https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mS
 
 ---
 
-## 🤝 致谢
+## 🤝 鸣谢
 
 感谢以下项目的规则支持：
 - [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
