@@ -19,3 +19,5 @@ proxy-providers: # 远程代理集
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
+
+#https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/override/WindowsMOJIE.yaml
