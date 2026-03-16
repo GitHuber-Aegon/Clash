@@ -417,7 +417,7 @@ rule-providers: # 远程规则集
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Tinder.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/DatingApp.list
     interval: 86400
 
   Apple:
@@ -551,3 +551,4 @@ rules: # 规则匹配
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
   - MATCH,🐟 漏网之鱼
+  
