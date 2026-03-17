@@ -1,3 +1,4 @@
+
 # mSubStore模板
 # https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mSubStoreModel.yaml
 # 将上面地址添加到客户端SubStore使用
@@ -58,6 +59,7 @@ dns:
 proxies: # 代理节点
             
 proxy-groups: # 策略组
+# 基础
   - name: 📶 测速最佳
     type: url-test
     url: "http://www.gstatic.com/generate_204"
@@ -100,6 +102,80 @@ proxy-groups: # 策略组
     type: select
     proxies:
       *D
+# 跨境
+  - name: GitHub
+    type: select
+    proxies: &B
+      - 🇨🇳 中国大陆
+      - 🗺 境外漫游
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
+
+  - name: Spotify
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+
+  - name: 💬 SocialApp
+    type: select
+    proxies:
+      *B
+
+  - name: Apple
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+# 境外
+  - name: Google
+    type: select
+    proxies: &G
+      - 🗺 境外漫游
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌍 非洲
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
+
+  - name: Telegram
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
+
+  - name: 🔞 十八禁
+    type: select
+    proxies:
+      *G
+
+  - name: ✈️ Airport
+    type: select
+    proxies:
+      *B
 
   - name: 🤖 AI
     type: select
@@ -121,86 +197,12 @@ proxy-groups: # 策略组
       - 🚫 拒绝请求
 #    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
 
-  - name: Google
-    type: select
-    proxies: &G
-      - 🗺 境外漫游
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
-
   - name: YouTube
     type: select
     proxies:
       *G
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
-
-  - name: Telegram
-    type: select
-    proxies:
-      *G
-    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
-
-  - name: 🔞 十八禁
-    type: select
-    proxies:
-      *G
-
-  - name: GitHub
-    type: select
-    proxies: &B
-      - 🇨🇳 中国大陆
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌍 非洲
-      - 🗺 境外漫游
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
-
-  - name: 💬 SocialApp
-    type: select
-    proxies:
-      *B
-
-  - name: Apple
-    type: select
-    proxies:
-      *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
-
-  - name: Spotify
-    type: select
-    proxies:
-      *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
-
-  - name: ✈️ Airport
-    type: select
-    proxies:
-      *B
-
+# 墙内
   - name: 小红书
     type: select
     proxies: &C
@@ -236,7 +238,7 @@ proxy-groups: # 策略组
     proxies:
       *C
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
-
+# 基础
   - name: 白名单
     type: select
     proxies:
@@ -261,7 +263,7 @@ proxy-groups: # 策略组
     proxies:
       - REJECT-DROP
     hidden: true
-
+# 地区分组
   - name: 🇭🇰 香港
     type: url-test
     url: "http://www.gstatic.com/generate_204"
@@ -362,54 +364,25 @@ proxy-groups: # 策略组
     hidden: true
 
 rule-providers: # 远程规则集
-
   WhiteList:
     type: http
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/White.list
     interval: 86400
-
-  AI:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
-    interval: 86400
-
-  Google:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Google/Google.list
-    interval: 86400
-
-  YouTube:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list
-    interval: 86400
-
-  Telegram:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Telegram/Telegram.list
-    interval: 86400
-
-  18:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18.list
-    interval: 86400
-
+# 跨境
   GitHub:
     type: http
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
+    interval: 86400
+
+  Spotify:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
     interval: 86400
 
   SocialApp:
@@ -425,12 +398,19 @@ rule-providers: # 远程规则集
     format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list
     interval: 86400
-
-  Spotify:
+# 境外
+  Telegram:
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Telegram/Telegram.list
+    interval: 86400
+
+  18:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18.list
     interval: 86400
 
   Airport:
@@ -440,6 +420,27 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
     interval: 86400
 
+  AI:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
+    interval: 86400
+
+  YouTube:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list
+    interval: 86400
+
+  Google:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Google/Google.list
+    interval: 86400
+# 墙内
   RedNote:
     type: http
     behavior: classical
@@ -474,7 +475,7 @@ rule-providers: # 远程规则集
     format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/NetEaseMusic/NetEaseMusic.list
     interval: 86400
-
+# 基础
   WallOutside:
     type: http
     behavior: classical
@@ -526,22 +527,24 @@ rule-providers: # 远程规则集
 
 rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
+# 跨境
   - RULE-SET,GitHub,GitHub
+  - RULE-SET,Spotify,Spotify
   - RULE-SET,SocialApp,💬 SocialApp
   - RULE-SET,Apple,Apple
-  - RULE-SET,Spotify,Spotify
+# 境外
+  - RULE-SET,Telegram,Telegram
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,AI,🤖AI
-  - RULE-SET,RedNote,小红书
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Google,Google
+# 墙内  
   - RULE-SET,WeChat,WeChat
+  - RULE-SET,RedNote,小红书
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
   - RULE-SET,NetEaseMusic,网易云音乐
-#  - RULE-SET,X,X
-  - RULE-SET,Google,Google
-  - RULE-SET,YouTube,YouTube
-  - RULE-SET,Telegram,Telegram
-  - RULE-SET,18,🔞 十八禁
+# 基础
   - RULE-SET,WallOutside,🗺 境外漫游
   - RULE-SET,Global,🗺 境外漫游
   - RULE-SET,IOS_Update,黑名单

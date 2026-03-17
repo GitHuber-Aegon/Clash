@@ -1,3 +1,4 @@
+
 # WindowsSubStore模板
 # https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/WinSubStoreModel.yaml
 # 将上面地址添加到客户端SubStore使用
@@ -56,8 +57,9 @@ dns:
     - https://dns.alidns.com/dns-query
 
 proxies: # 代理节点
-            
+
 proxy-groups: # 策略组
+# 基础
   - name: 📶 测速最佳
     type: url-test
     proxies:
@@ -102,7 +104,7 @@ proxy-groups: # 策略组
     type: select
     proxies:
       *D
-
+# 自用
   - name: 🍄 TMS
     type: select
     proxies: &M
@@ -121,14 +123,6 @@ proxy-groups: # 策略组
       *M
     include-all: true
     filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
-
-  - name: myTVSPUER
-    type: select
-    proxies:
-      *M
-    include-all: true
-    filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
-    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/myTVSUPER.png
 
   - name: LeagueClient
     type: select
@@ -157,45 +151,42 @@ proxy-groups: # 策略组
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/LOL.png
 
-  - name: Antigravity
+  - name: myTVSPUER
     type: select
     proxies:
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌍 非洲
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🗺 境外漫游
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
+      *M
+    include-all: true
+    filter: "🇭🇰|香港|HK|HongKong|🇹🇼|台湾|台灣|臺灣|TW|TaiWan"
+    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/myTVSUPER.png
 
-  - name: 🤖 AI
+# 跨境
+  - name: GitHub
     type: select
     proxies:
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌍 非洲
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🗺 境外漫游
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
 
+  - name: Spotify
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+
+  - name: 🐱 CFW
+    type: select
+    proxies:
+      *B
+
+  - name: 💬 SocialApp
+    type: select
+    proxies:
+      *B
+
+  - name: 🅿️ PotPlayer
+    type: select
+    proxies:
+      *B
+# 境外
   - name: Google
     type: select
     proxies: &G
@@ -216,11 +207,25 @@ proxy-groups: # 策略组
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 
-  - name: YouTube
+  - name: Antigravity
     type: select
     proxies:
-      *G
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌍 非洲
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🗺 境外漫游
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
 
   - name: Telegram
     type: select
@@ -233,6 +238,59 @@ proxy-groups: # 策略组
     proxies:
       *G
 
+  - name: ✈️ Airport
+    type: select
+    proxies:
+      *G
+
+  - name: 🤖 AI
+    type: select
+    proxies:
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌍 非洲
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🗺 境外漫游
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+
+  - name: YouTube
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+#墙内
+  - name: 📥 DownloadTools
+    type: select
+    proxies: &C
+      - 🇨🇳 中国大陆
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🗺 境外漫游
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+
+  - name: 爱奇艺
+    type: select
+    proxies:
+      *C
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png
+
+  - name: 哔哩哔哩
+    type: select
+    proxies:
+      *C
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
+# 跨国企业
   - name: Apple
     type: select
     proxies:
@@ -244,80 +302,7 @@ proxy-groups: # 策略组
     proxies:
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
-
-  - name: GitHub
-    type: select
-    proxies:
-      *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
-
-  - name: Spotify
-    type: select
-    proxies:
-      *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
-
-  - name: 💬 SocialApp
-    type: select
-    proxies:
-      *B
-
-  - name: 🅿️ PotPlayer
-    type: select
-    proxies:
-      *B
-
-  - name: ✈️ Airport
-    type: select
-    proxies:
-      *B
-
-  - name: 🐱 CFW
-    type: select
-    proxies:
-      *B
-
-  - name: 📥 DownloadTools
-    type: select
-    proxies:
-      *B
-
-#  - name: WeChat
-#    type: select
-#    proxies: &C
-#      - 🇨🇳 中国大陆
-#      - 🇭🇰 香港
-#      - 🇹🇼 台湾
-#      - 🗺 境外漫游
-#      - ☑️ 手动切换
-#      - ⭕ 直连请求
-#      - 🚫 拒绝请求
-#    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/WeChat.png
-
-  - name: 爱奇艺
-    type: select
-    proxies: &C
-      - 🇨🇳 中国大陆
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🗺 境外漫游
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/iQIYI_1.png
-
-  - name: 哔哩哔哩
-    type: select
-    proxies:
-      *C
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
-
-#  - name: 网易云音乐
-#    type: select
-#    proxies:
-#      *C
-#    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music.png
-
+# 基础
   - name: 白名单
     type: select
     proxies:
@@ -342,7 +327,7 @@ proxy-groups: # 策略组
     proxies:
       - REJECT-DROP
     hidden: true
-
+# 地区分组
   - name: 🇭🇰 香港
     type: url-test
     url: "http://www.gstatic.com/generate_204"
@@ -443,7 +428,7 @@ proxy-groups: # 策略组
     hidden: true
 
 rule-providers: # 远程规则集
-
+# 自用
   WhiteList:
     type: http
     behavior: classical
@@ -472,13 +457,6 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/BeanfunTW.list
     interval: 86400
 
-  myTVSPUER:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/myTVSUPER.list
-    interval: 86400
-
   LeagueClient:
     type: http
     behavior: classical
@@ -493,32 +471,53 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/LeagurofLegends(TM)Client.list
     interval: 86400
 
+  myTVSPUER:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/myTVSUPER.list
+    interval: 86400
+# 跨境
+  GitHub:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
+    interval: 86400
+
+  Spotify:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
+    interval: 86400
+
+  CFW:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/CFW.list
+    interval: 86400
+
+  SocialApp:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/SocialApp.list
+    interval: 86400
+
+  PotPlayer:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
+    interval: 86400
+# 境外
   Antigravity:
     type: http
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Antigravity.list
-    interval: 86400
-
-  AI:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
-    interval: 86400
-
-  Google:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Google/Google.list
-    interval: 86400
-
-  YouTube:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list
     interval: 86400
 
   Telegram:
@@ -535,6 +534,55 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18.list
     interval: 86400
 
+  Airport:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
+    interval: 86400
+
+  AI:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
+    interval: 86400
+
+  YouTube:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/YouTube/YouTube.list
+    interval: 86400
+
+  Google:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Google/Google.list
+    interval: 86400
+# 墙内
+  DownloadTools:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/DownloadTools.list
+    interval: 86400
+
+  iQIYI:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/iQIYI/iQIYI.list
+    interval: 86400
+
+  BiliBili:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list
+    interval: 86400
+# 跨国企业
   Apple:
     type: http
     behavior: classical
@@ -555,84 +603,7 @@ rule-providers: # 远程规则集
     format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Microsoft/Microsoft.list
     interval: 86400
-
-  GitHub:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
-    interval: 86400
-
-  Spotify:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
-    interval: 86400
-
-  SocialApp:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/SocialApp.list
-    interval: 86400
-
-  PotPlayer:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
-    interval: 86400
-
-  Airport:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
-    interval: 86400
-
-  CFW:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/CFW.list
-    interval: 86400
-
-  DownloadTools:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/DownloadTools.list
-    interval: 86400
-
-#  WeChat:
-#    type: http
-#    behavior: classical
-#    format: text
-#    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/WeChat/WeChat.list
-#    interval: 86400
-
-  iQIYI:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/iQIYI/iQIYI.list
-    interval: 86400
-
-  BiliBili:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list
-    interval: 86400
-
-#  NetEaseMusic:
-#    type: http
-#    behavior: classical
-#    format: text
-#    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/NetEaseMusic/NetEaseMusic.list
-#    interval: 86400
-
+# 基础
   WallOutside:
     type: http
     behavior: classical
@@ -661,20 +632,6 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/China/China.list
     interval: 86400
 
-#  IOS_Update: # IOS更新
-#    type: http
-#    behavior: classical
-#    format: text
-#    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/IOS_Update.list
-#    interval: 86400
-
-#  BanProgramAD: # 屏蔽APP开屏广告
-#    type: http
-#    behavior: classical
-#    format: text
-#    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-#    interval: 86400
-
   BanAD: # 屏蔽广告
     type: http
     behavior: classical
@@ -683,38 +640,39 @@ rule-providers: # 远程规则集
     interval: 86400
 
 rules: # 规则匹配
+# 自用
   - RULE-SET,WhiteList,白名单
   - RULE-SET,TMS,🍄 TMS
   - RULE-SET,BeanfunHK,🍊 Beanfun
   - RULE-SET,BeanfunTW,🍊 Beanfun
-  - RULE-SET,myTVSPUER,myTVSPUER
   - RULE-SET,LeagueClient,LeagueClient
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
-  - RULE-SET,Antigravity,Antigravity
-  - RULE-SET,AI,🤖 AI
-#  - RULE-SET,X,X
-  - RULE-SET,YouTube,YouTube
-  - RULE-SET,Telegram,Telegram
-  - RULE-SET,18,🔞 十八禁
-  - RULE-SET,Google,Google
+  - RULE-SET,myTVSPUER,myTVSPUER
+# 跨境
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
-  - RULE-SET,Airport,✈️ Airport
   - RULE-SET,CFW,🐱 CFW
   - RULE-SET,SocialApp,💬 SocialApp
   - RULE-SET,PotPlayer,🅿️ PotPlayer
+# 境外
+  - RULE-SET,Antigravity,Antigravity
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,18,🔞 十八禁
+  - RULE-SET,Airport,✈️ Airport
+  - RULE-SET,AI,🤖 AI
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Google,Google
+# 墙内
   - RULE-SET,DownloadTools,📥 DownloadTools
-#  - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
-#  - RULE-SET,NetEaseMusic,网易云音乐
+# 跨国企业
   - RULE-SET,Apple,Apple
   - RULE-SET,OneDrive,Microsoft
   - RULE-SET,Microsoft,Microsoft
+# 基础
   - RULE-SET,WallOutside,🗺 境外漫游
   - RULE-SET,Global,🗺 境外漫游
-#  - RULE-SET,IOS_Update,黑名单
-#  - RULE-SET,BanProgramAD,黑名单
   - RULE-SET,BanAD,黑名单
   - GEOIP,Lan,DIRECT,no-resolve
   - GEOIP,CN,DIRECT,no-resolve
