@@ -181,12 +181,6 @@ proxy-groups: # 策略组
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 
-  - name: Telegram
-    type: select
-    proxies:
-      *G
-    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
-
   - name: 🔞 十八禁
     type: select
     proxies:
@@ -196,6 +190,12 @@ proxy-groups: # 策略组
     type: select
     proxies:
       *G
+
+  - name: Telegram
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
 
   - name: YouTube
     type: select
