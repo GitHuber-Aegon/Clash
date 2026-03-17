@@ -534,7 +534,6 @@ rules: # 规则匹配
   - RULE-SET,Apple,Apple
 # 美区优先
   - RULE-SET,AI,🤖AI
-  - RULE-SET,Antigravity,Antigravity
 # 境外
   - RULE-SET,18,🔞 十八禁
   - RULE-SET,Airport,✈️ Airport
