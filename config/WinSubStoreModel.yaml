@@ -683,7 +683,7 @@ rules: # 规则匹配
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
-  - RULE-SET,SocialApp,SocialApp
+  - RULE-SET,SocialApp,🗪 SocialApp
   - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,DownloadTools,📥 DownloadTools

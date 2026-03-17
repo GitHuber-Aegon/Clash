@@ -527,7 +527,7 @@ rule-providers: # 远程规则集
 rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
   - RULE-SET,GitHub,GitHub
-  - RULE-SET,SocialApp,SocialApp
+  - RULE-SET,SocialApp,🗪 SocialApp
   - RULE-SET,Apple,Apple
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Airport,✈️ Airport
