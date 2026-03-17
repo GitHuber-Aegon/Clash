@@ -690,16 +690,6 @@ rules: # 规则匹配
   - RULE-SET,myTVSPUER,myTVSPUER
   - RULE-SET,LeagueClient,LeagueClient
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
-  - RULE-SET,Apple,Apple
-  - RULE-SET,OneDrive,Microsoft
-  - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,Airport,✈️ Airport
-  - RULE-SET,CFW,🐱 CFW
-  - RULE-SET,GitHub,GitHub
-  - RULE-SET,Spotify,Spotify
-  - RULE-SET,SocialApp,💬 SocialApp
-  - RULE-SET,PotPlayer,🅿️ PotPlayer
-  - RULE-SET,DownloadTools,📥 DownloadTools
   - RULE-SET,Antigravity,Antigravity
   - RULE-SET,AI,🤖 AI
 #  - RULE-SET,X,X
@@ -707,6 +697,16 @@ rules: # 规则匹配
   - RULE-SET,Google,Google
   - RULE-SET,Telegram,Telegram
   - RULE-SET,18,🔞 十八禁
+  - RULE-SET,Apple,Apple
+  - RULE-SET,OneDrive,Microsoft
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,Airport,✈️ Airport
+  - RULE-SET,CFW,🐱 CFW
+  - RULE-SET,SocialApp,💬 SocialApp
+  - RULE-SET,PotPlayer,🅿️ PotPlayer
+  - RULE-SET,GitHub,GitHub
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,DownloadTools,📥 DownloadTools
 #  - RULE-SET,WeChat,WeChat
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
