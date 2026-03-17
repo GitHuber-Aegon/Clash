@@ -257,11 +257,10 @@ proxy-groups: # 策略组
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
-  - name: Tinder
+  - name: 🗪 SocialApp
     type: select
     proxies:
       *B
-    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/tinder.png
 
   - name: 🅿️ PotPlayer
     type: select
@@ -684,7 +683,7 @@ rules: # 规则匹配
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
-  - RULE-SET,Tinder,Tinder
+  - RULE-SET,SocialApp,SocialApp
   - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,DownloadTools,📥 DownloadTools
