@@ -272,6 +272,11 @@ proxy-groups: # 策略组
     proxies:
       *B
 
+  - name: 🐱 CFW
+    type: select
+    proxies:
+      *B
+
   - name: 📥 DownloadTools
     type: select
     proxies:
@@ -586,6 +591,13 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
     interval: 86400
 
+  CFW:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/CFW.list
+    interval: 86400
+
   DownloadTools:
     type: http
     behavior: classical
@@ -686,6 +698,7 @@ rules: # 规则匹配
   - RULE-SET,SocialApp,💬 SocialApp
   - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Airport,✈️ Airport
+  - RULE-SET,CFW,🐱 CFW
   - RULE-SET,DownloadTools,📥 DownloadTools
   - RULE-SET,Antigravity,Antigravity
   - RULE-SET,AI,🤖 AI
