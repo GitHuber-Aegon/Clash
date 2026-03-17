@@ -160,11 +160,6 @@ proxy-groups: # 策略组
       - ⭕ 直连请求
       - 🚫 拒绝请求
 #    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
-
-  - name: Antigravity
-    type: select
-    proxies: *USA
-    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
 # 境外
   - name: Google
     type: select
