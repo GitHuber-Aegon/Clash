@@ -128,6 +128,7 @@ proxy-groups: # 策略组
     type: select
     proxies: &B # B for Both
       - 🇨🇳 中国大陆
+      - 🗺 境外漫游
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🌏 亚洲
@@ -139,7 +140,6 @@ proxy-groups: # 策略组
       - 🇺🇸 美国
       - 🇪🇺 欧洲
       - 🌍 非洲
-      - 🗺 境外漫游
       - ☑️ 手动切换
       - ⭕ 直连请求
       - 🚫 拒绝请求
@@ -464,6 +464,27 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/myTVSUPER.list
     interval: 86400
 # 跨境
+  CFW:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/CFW.list
+    interval: 86400
+
+  PotPlayer:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
+    interval: 86400
+
+  SocialApp:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/SocialApp.list
+    interval: 86400
+
   GitHub:
     type: http
     behavior: classical
@@ -476,27 +497,6 @@ rule-providers: # 远程规则集
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
-    interval: 86400
-
-  CFW:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/CFW.list
-    interval: 86400
-
-  SocialApp:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/SocialApp.list
-    interval: 86400
-
-  PotPlayer:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
     interval: 86400
 
   Apple:
@@ -636,11 +636,11 @@ rules: # 规则匹配
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
   - RULE-SET,myTVSPUER,myTVSPUER
 # 跨境
+  - RULE-SET,CFW,🐱 CFW
+  - RULE-SET,PotPlayer,🅿️ PotPlayer
+  - RULE-SET,SocialApp,💬 SocialApp
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
-  - RULE-SET,CFW,🐱 CFW
-  - RULE-SET,SocialApp,💬 SocialApp
-  - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Apple,Apple
   - RULE-SET,OneDrive,Microsoft
   - RULE-SET,Microsoft,Microsoft
