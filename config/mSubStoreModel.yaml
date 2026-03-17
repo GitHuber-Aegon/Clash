@@ -406,11 +406,11 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
     interval: 86400
 # 境外
-  18:
+  18+:
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18+.list
     interval: 86400
 
   Airport:
@@ -535,7 +535,7 @@ rules: # 规则匹配
 # 美区优先
   - RULE-SET,AI,🤖AI
 # 境外
-  - RULE-SET,18,🔞 十八禁
+  - RULE-SET,18+,🔞 十八禁
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,Telegram,Telegram
   - RULE-SET,YouTube,YouTube
