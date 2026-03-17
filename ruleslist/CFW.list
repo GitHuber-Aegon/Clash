@@ -4,5 +4,6 @@ PROCESS-NAME,Clash for Windows.exe
 
 # Clash for Windows Core
 DOMAIN-SUFFIX,doh.pub
-PROCESS-NAME,FlClashCore.exe
 PROCESS-NAME,mihomo
+PROCESS-NAME,Clash Party.exe
+PROCESS-NAME,FlClashCore.exe
