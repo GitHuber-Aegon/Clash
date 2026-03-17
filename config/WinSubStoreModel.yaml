@@ -454,7 +454,7 @@ rule-providers: # 远程规则集
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/LeagurofLegends(TM)Client.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/LeagurOfLegends(TM)Client.list
     interval: 86400
 
   myTVSPUER:
