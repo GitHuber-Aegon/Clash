@@ -534,11 +534,11 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Telegram/Telegram.list
     interval: 86400
 
-  18:
+  18+:
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/18+.list
     interval: 86400
 
   Airport:
@@ -589,7 +589,6 @@ rule-providers: # 远程规则集
     format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list
     interval: 86400
-
 # 基础
   WallOutside:
     type: http
@@ -648,7 +647,7 @@ rules: # 规则匹配
   - RULE-SET,AI,🤖 AI
   - RULE-SET,Antigravity,Antigravity
 # 境外
-  - RULE-SET,18,🔞 十八禁
+  - RULE-SET,18+,🔞 十八禁
   - RULE-SET,Airport,✈️ Airport
   - RULE-SET,Telegram,Telegram
   - RULE-SET,YouTube,YouTube
