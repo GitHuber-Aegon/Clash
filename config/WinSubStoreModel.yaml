@@ -565,7 +565,7 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
     interval: 86400
 
-  Tinder:
+  SocialApp:
     type: http
     behavior: classical
     format: text
