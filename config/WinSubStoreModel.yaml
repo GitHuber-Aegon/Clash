@@ -693,12 +693,12 @@ rules: # 规则匹配
   - RULE-SET,Apple,Apple
   - RULE-SET,OneDrive,Microsoft
   - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,Airport,✈️ Airport
+  - RULE-SET,CFW,🐱 CFW
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
   - RULE-SET,SocialApp,💬 SocialApp
   - RULE-SET,PotPlayer,🅿️ PotPlayer
-  - RULE-SET,Airport,✈️ Airport
-  - RULE-SET,CFW,🐱 CFW
   - RULE-SET,DownloadTools,📥 DownloadTools
   - RULE-SET,Antigravity,Antigravity
   - RULE-SET,AI,🤖 AI
