@@ -179,7 +179,7 @@ proxy-groups: # 策略组
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
 
-  - name: � SocialApp
+  - name: 💬 SocialApp
     type: select
     proxies:
       *B
@@ -527,7 +527,7 @@ rule-providers: # 远程规则集
 rules: # 规则匹配
   - RULE-SET,WhiteList,白名单
   - RULE-SET,GitHub,GitHub
-  - RULE-SET,SocialApp,� SocialApp
+  - RULE-SET,SocialApp,💬 SocialApp
   - RULE-SET,Apple,Apple
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Airport,✈️ Airport
