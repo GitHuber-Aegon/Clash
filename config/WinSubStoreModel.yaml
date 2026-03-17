@@ -94,7 +94,7 @@ proxy-groups: # 策略组
 
   - name: 🇨🇳 中国大陆
     type: select
-    proxies: &D
+    proxies: &D # D for Direct
       - ⭕ 直连请求
       - 🚫 拒绝请求
       - 🗺 境外漫游
@@ -107,7 +107,7 @@ proxy-groups: # 策略组
 # 自用
   - name: 🍄 TMS
     type: select
-    proxies: &M
+    proxies: &M # M for MapleStory
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🗺 境外漫游
@@ -126,7 +126,7 @@ proxy-groups: # 策略组
 
   - name: LeagueClient
     type: select
-    proxies: &B
+    proxies: &B # B for Both
       - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -186,10 +186,47 @@ proxy-groups: # 策略组
     type: select
     proxies:
       *B
+
+  - name: Apple
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+
+  - name: Microsoft
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+# 美区优先
+  - name: 🤖 AI
+    type: select
+    proxies: &USA
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌍 非洲
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🗺 境外漫游
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+
+  - name: Antigravity
+    type: select
+    proxies: *USA
+    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
+
 # 境外
   - name: Google
     type: select
-    proxies: &G
+    proxies: &G # G for Global
       - 🗺 境外漫游
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -207,26 +244,6 @@ proxy-groups: # 策略组
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 
-  - name: Antigravity
-    type: select
-    proxies:
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌍 非洲
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🗺 境外漫游
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
-
   - name: Telegram
     type: select
     proxies:
@@ -243,25 +260,6 @@ proxy-groups: # 策略组
     proxies:
       *G
 
-  - name: 🤖 AI
-    type: select
-    proxies:
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌍 非洲
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🗺 境外漫游
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-
   - name: YouTube
     type: select
     proxies:
@@ -270,7 +268,7 @@ proxy-groups: # 策略组
 #墙内
   - name: 📥 DownloadTools
     type: select
-    proxies: &C
+    proxies: &C # C for China
       - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -290,18 +288,6 @@ proxy-groups: # 策略组
     proxies:
       *C
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
-# 跨国企业
-  - name: Apple
-    type: select
-    proxies:
-      *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
-
-  - name: Microsoft
-    type: select
-    proxies:
-      *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 # 基础
   - name: 白名单
     type: select
@@ -512,6 +498,27 @@ rule-providers: # 远程规则集
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
     interval: 86400
+
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list
+    interval: 86400
+
+  OneDrive:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OneDrive/OneDrive.list
+    interval: 86400
+
+  Microsoft:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Microsoft/Microsoft.list
+    interval: 86400
 # 境外
   Antigravity:
     type: http
@@ -582,27 +589,7 @@ rule-providers: # 远程规则集
     format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/BiliBili/BiliBili.list
     interval: 86400
-# 跨国企业
-  Apple:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Apple/Apple.list
-    interval: 86400
 
-  OneDrive:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/OneDrive/OneDrive.list
-    interval: 86400
-
-  Microsoft:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Microsoft/Microsoft.list
-    interval: 86400
 # 基础
   WallOutside:
     type: http
@@ -654,22 +641,22 @@ rules: # 规则匹配
   - RULE-SET,CFW,🐱 CFW
   - RULE-SET,SocialApp,💬 SocialApp
   - RULE-SET,PotPlayer,🅿️ PotPlayer
-# 境外
+  - RULE-SET,Apple,Apple
+  - RULE-SET,OneDrive,Microsoft
+  - RULE-SET,Microsoft,Microsoft
+# 美区优先
+  - RULE-SET,AI,🤖 AI
   - RULE-SET,Antigravity,Antigravity
-  - RULE-SET,Telegram,Telegram
+# 境外
   - RULE-SET,18,🔞 十八禁
   - RULE-SET,Airport,✈️ Airport
-  - RULE-SET,AI,🤖 AI
+  - RULE-SET,Telegram,Telegram
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Google,Google
 # 墙内
   - RULE-SET,DownloadTools,📥 DownloadTools
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
-# 跨国企业
-  - RULE-SET,Apple,Apple
-  - RULE-SET,OneDrive,Microsoft
-  - RULE-SET,Microsoft,Microsoft
 # 基础
   - RULE-SET,WallOutside,🗺 境外漫游
   - RULE-SET,Global,🗺 境外漫游

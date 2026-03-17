@@ -92,7 +92,7 @@ proxy-groups: # 策略组
 
   - name: 🇨🇳 中国大陆
     type: select
-    proxies: &D
+    proxies: &D # D for Direct
       - ⭕ 直连请求
       - 🚫 拒绝请求
       - 🗺 境外漫游
@@ -105,7 +105,7 @@ proxy-groups: # 策略组
 # 跨境
   - name: GitHub
     type: select
-    proxies: &B
+    proxies: &B # B for Both
       - 🇨🇳 中国大陆
       - 🗺 境外漫游
       - 🇭🇰 香港
@@ -140,10 +140,35 @@ proxy-groups: # 策略组
     proxies:
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_2.png
+# 美区优先
+  - name: 🤖 AI
+    type: select
+    proxies: &USA
+      - 🌎 美洲
+      - 🇺🇸 美国
+      - 🇪🇺 欧洲
+      - 🌏 亚洲
+      - 🇯🇵 日本
+      - 🇸🇬 狮城
+      - 🇰🇷 韩国
+      - 🇦🇺 澳洲
+      - 🌍 非洲
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🗺 境外漫游
+      - ☑️ 手动切换
+      - ⭕ 直连请求
+      - 🚫 拒绝请求
+#    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
+
+  - name: Antigravity
+    type: select
+    proxies: *USA
+    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
 # 境外
   - name: Google
     type: select
-    proxies: &G
+    proxies: &G # G for Global
       - 🗺 境外漫游
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -175,27 +200,7 @@ proxy-groups: # 策略组
   - name: ✈️ Airport
     type: select
     proxies:
-      *B
-
-  - name: 🤖 AI
-    type: select
-    proxies:
-      - 🌎 美洲
-      - 🇺🇸 美国
-      - 🇪🇺 欧洲
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🌏 亚洲
-      - 🇯🇵 日本
-      - 🇸🇬 狮城
-      - 🇰🇷 韩国
-      - 🇦🇺 澳洲
-      - 🌍 非洲
-      - 🗺 境外漫游
-      - ☑️ 手动切换
-      - ⭕ 直连请求
-      - 🚫 拒绝请求
-#    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bot.png
+      *G
 
   - name: YouTube
     type: select
@@ -205,7 +210,7 @@ proxy-groups: # 策略组
 # 墙内
   - name: 小红书
     type: select
-    proxies: &C
+    proxies: &C # C for China
       - 🇨🇳 中国大陆
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -532,10 +537,13 @@ rules: # 规则匹配
   - RULE-SET,Spotify,Spotify
   - RULE-SET,SocialApp,💬 SocialApp
   - RULE-SET,Apple,Apple
-# 境外
-  - RULE-SET,Telegram,Telegram
-  - RULE-SET,Airport,✈️ Airport
+# 美区优先
   - RULE-SET,AI,🤖AI
+  - RULE-SET,Antigravity,Antigravity
+# 境外
+  - RULE-SET,18,🔞 十八禁
+  - RULE-SET,Airport,✈️ Airport
+  - RULE-SET,Telegram,Telegram
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Google,Google
 # 墙内  
