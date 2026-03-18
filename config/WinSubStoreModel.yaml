@@ -520,7 +520,7 @@ rule-providers: # 远程规则集
     format: text
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Microsoft/Microsoft.list
     interval: 86400
-# 境外
+# 美区优先
   Antigravity:
     type: http
     behavior: classical
@@ -528,6 +528,14 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Antigravity.list
     interval: 86400
 
+  AI:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
+    interval: 86400
+
+# 境外
   Telegram:
     type: http
     behavior: classical
@@ -547,13 +555,6 @@ rule-providers: # 远程规则集
     behavior: classical
     format: text
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/Airport.list
-    interval: 86400
-
-  AI:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
     interval: 86400
 
   YouTube:
