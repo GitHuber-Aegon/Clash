@@ -57,7 +57,7 @@ dns:
     - https://dns.alidns.com/dns-query
 
 proxies: # 代理节点
-            
+
 proxy-groups: # 策略组
 # 基础
   - name: 📶 测速最佳
@@ -181,6 +181,18 @@ proxy-groups: # 策略组
       - 🚫 拒绝请求
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 
+  - name: YouTube
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+
+  - name: Telegram
+    type: select
+    proxies:
+      *G
+    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
+
   - name: 🔞 十八禁
     type: select
     proxies:
@@ -190,18 +202,6 @@ proxy-groups: # 策略组
     type: select
     proxies:
       *G
-
-  - name: Telegram
-    type: select
-    proxies:
-      *G
-    icon: https://raw.githubusercontent.com/shindgewongxj/WHATSINStash/main/icon/telegram.png
-
-  - name: YouTube
-    type: select
-    proxies:
-      *G
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 # 墙内
   - name: 小红书
     type: select
