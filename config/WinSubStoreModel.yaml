@@ -643,8 +643,6 @@ rules: # 规则匹配
   - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Apple,Apple
-  - RULE-SET,OneDrive,Microsoft
-  - RULE-SET,Microsoft,Microsoft
 # 美区优先
   - RULE-SET,AI,🤖 AI
   - RULE-SET,Antigravity,Antigravity
@@ -659,6 +657,8 @@ rules: # 规则匹配
   - RULE-SET,iQIYI,爱奇艺
   - RULE-SET,BiliBili,哔哩哔哩
 # 基础
+  - RULE-SET,OneDrive,Microsoft
+  - RULE-SET,Microsoft,Microsoft
   - RULE-SET,WallOutside,🗺 境外漫游
   - RULE-SET,Global,🗺 境外漫游
   - RULE-SET,BanAD,黑名单
