@@ -218,7 +218,7 @@ proxy-groups: # 策略组
       - ⭕ 直连请求
       - 🚫 拒绝请求
 
-  - name: Antigravity
+  - name: AI_Coding
     type: select
     proxies: *USA
     icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
@@ -521,11 +521,11 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Microsoft/Microsoft.list
     interval: 86400
 # 美区优先
-  Antigravity:
+  AI_Coding:
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/Antigravity.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/AI_Coding.list
     interval: 86400
 
   AI:
@@ -645,7 +645,7 @@ rules: # 规则匹配
   - RULE-SET,Apple,Apple
 # 美区优先
   - RULE-SET,AI,🤖 AI
-  - RULE-SET,Antigravity,Antigravity
+  - RULE-SET,AI_Coding,AI_Coding
 # 境外
   - RULE-SET,18+,🔞 十八禁
   - RULE-SET,Airport,✈️ Airport

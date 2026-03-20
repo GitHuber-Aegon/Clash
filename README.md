@@ -55,7 +55,7 @@ https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/config/mS
 │   ├── WinSubStoreModel.yaml
 │   └── mSubStoreModel.yaml
 ├── ruleslist/             # 自定义规则集 (.list)
-│   ├── Antigravity.list   # AI 增强规则
+│   ├── AI_Coding.list     # AI 增强规则
 │   ├── TMS.list
 │   └── ...
 └── icon/                  # 策略组专用图标

@@ -1,0 +1,23 @@
+# AI Coding 规则列表
+# 包含 Antigravity, VS Code, Cursor 等 AI 编程相关服务
+
+# === Antigravity ===
+DOMAIN-SUFFIX,antigravity.google
+DOMAIN-KEYWORD,antigravity
+PROCESS-NAME,Antigravity.exe
+
+# === VS Code / Visual Studio ===
+DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,vscode.dev
+DOMAIN-SUFFIX,vscode-auth.github.com
+DOMAIN-SUFFIX,vscode-cdn.net
+DOMAIN-SUFFIX,vscode-unpkg.net
+DOMAIN-SUFFIX,vsassets.io
+DOMAIN-SUFFIX,gallery.vsassets.io
+DOMAIN-KEYWORD,vscode
+PROCESS-NAME,Code.exe
+
+# === Cursor (AI Code Editor) ===
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-KEYWORD,cursor
