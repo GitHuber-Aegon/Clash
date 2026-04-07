@@ -221,7 +221,7 @@ proxy-groups: # 策略组
   - name: AI_Coding
     type: select
     proxies: *USA
-    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/Antigravity.png
+    icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/vsCode.png
 
 # 境外
   - name: Google
