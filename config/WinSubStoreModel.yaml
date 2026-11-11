@@ -160,17 +160,17 @@ proxy-groups: # 策略组
     icon: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/icon/myTVSUPER.png
 
 # 跨境
-  - name: GitHub
-    type: select
-    proxies:
-      *B
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
-
   - name: Spotify
     type: select
     proxies:
       *B
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+
+  - name: GitHub
+    type: select
+    proxies:
+      *B
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/GitHub.png
 
   - name: 🐱 CFW
     type: select
@@ -465,25 +465,11 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/myTVSUPER.list
     interval: 86400
 # 跨境
-  CFW:
+  Spotify:
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/CFW.list
-    interval: 86400
-
-  PotPlayer:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
-    interval: 86400
-
-  SocialApp:
-    type: http
-    behavior: classical
-    format: text
-    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/SocialApp.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
     interval: 86400
 
   GitHub:
@@ -493,11 +479,25 @@ rule-providers: # 远程规则集
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list
     interval: 86400
 
-  Spotify:
+  CFW:
     type: http
     behavior: classical
     format: text
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Spotify/Spotify.list
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/refs/heads/main/ruleslist/CFW.list
+    interval: 86400
+
+  SocialApp:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/SocialApp.list
+    interval: 86400
+
+  PotPlayer:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/GitHuber-Aegon/Clash/main/ruleslist/PotPlayer.list
     interval: 86400
 
   Apple:
@@ -637,11 +637,11 @@ rules: # 规则匹配
   - RULE-SET,LOL(TM)Client,LOL(TM)Client
   - RULE-SET,myTVSPUER,myTVSPUER
 # 跨境
-  - RULE-SET,CFW,🐱 CFW
-  - RULE-SET,PotPlayer,🅿️ PotPlayer
-  - RULE-SET,SocialApp,💬 SocialApp
-  - RULE-SET,GitHub,GitHub
   - RULE-SET,Spotify,Spotify
+  - RULE-SET,GitHub,GitHub
+  - RULE-SET,CFW,🐱 CFW
+  - RULE-SET,SocialApp,💬 SocialApp  
+  - RULE-SET,PotPlayer,🅿️ PotPlayer
   - RULE-SET,Apple,Apple
 # 美区优先
   - RULE-SET,AI,🤖 AI
