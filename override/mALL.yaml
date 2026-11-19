@@ -1,10 +1,10 @@
-name: 全部远程代理集订阅地址
+name: 全部机场远程代理集订阅地址
 desc: 更换模板原有订阅地址
 category: proxy-providers
 icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 
 proxy-providers: # 远程代理集
-  良心云: # 集合名称
+  全部机场: # 集合名称
     type: http
     url: "https://sub.store/download/collection/ALL"
     # 以下方法任选其一⚠️有Clash订阅优先使用方法二❗️
